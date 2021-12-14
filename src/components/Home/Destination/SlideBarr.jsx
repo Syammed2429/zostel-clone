@@ -1,6 +1,15 @@
 import React from "react";
 import Flickity from "react-flickity-component";
 import "./Slidebar.css";
+import alleppey from '../../../assets/images/Alleppey.svg'
+import aurangabad from '../../../assets/images/aurangabad.svg'
+import bangalore from '../../../assets/images/Bangalore.svg'
+import barot from '../../../assets/images/barot.svg'
+import manali from '../../../assets/images/Manali.svg'
+import mashobra from '../../../assets/images/Mashobra.svg'
+import mcleod from '../../../assets/images/mcledo.svg'
+import mumbai from '../../../assets/images/mumbai.svg'
+
 
 const flickityOptions = {
     groupCells: true,
@@ -18,82 +27,51 @@ function Slidebarr() {
                 <Flickity options={flickityOptions}>
                     <img
                         className="slider"
-                        src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/27/1632727170/476x220-v2.jpg"
-                        alt=""
+                        src={alleppey}
+                        alt="alleppey"
                     />
                     <img
                         className="slider "
-                        src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/24/1632471645/phonepe-476x220.png"
-                        alt=""
+                        src={aurangabad}
+                        alt="aurangabad"
                     />
                     <img
                         className="slider "
-                        src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/24/1632471295/cred-476x220.png"
-                        alt=""
+                        src={bangalore}
+                        alt="bangalore"
                     />
                     <img
                         className="slider "
-                        src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/24/1632471175/mobe-476x220.png"
-                        alt=""
+                        src={barot}
+                        alt="barot"
                     />
                     <img
                         className="slider "
-                        src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/24/1632471551/ola-476X220.png"
-                        alt=""
+                        src={manali}
+                        alt="manali"
                     />
                     <div>
 
                         <img
                             className="slider"
-                            src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/24/1632471175/mobe-476x220.png"
-                            alt=""
+                            src={mashobra}
+                            alt="mashobra"
                         />
                         <p>Hello</p>
                     </div>
 
 
-                    {/* <Flickity options={flickityOptions}> */}
                     <img
                         className="slider "
-                        src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/24/1632471295/cred-476x220.png"
-                        alt=""
+                        src={mcleod}
+                        alt="mcleod"
                     />
                     <img
                         className="slider "
-                        src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/24/1632471175/mobe-476x220.png"
-                        alt=""
+                        src={mumbai}
+                        alt="mumbai"
                     />
-                    <img
-                        className="slider "
-                        src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/24/1632471295/cred-476x220.png"
-                        alt=""
-                    />
-                    <img
-                        className="slider "
-                        src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/24/1632471175/mobe-476x220.png"
-                        alt=""
-                    />
-                    <img
-                        className="slider "
-                        src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/24/1632471295/cred-476x220.png"
-                        alt=""
-                    />
-                    <img
-                        className="slider "
-                        src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/24/1632471175/mobe-476x220.png"
-                        alt=""
-                    />
-                    <img
-                        className="slider "
-                        src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/24/1632471295/cred-476x220.png"
-                        alt=""
-                    />
-                    <img
-                        className="slider "
-                        src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/24/1632471175/mobe-476x220.png"
-                        alt=""
-                    />
-                    {/* </Flickity> */}
+
 
 
 
