@@ -1,0 +1,30 @@
+.header {
+  position: absolute;
+  height: 60px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: #ffff;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  position: relative;
+  width: 174px;
+  height: 44.19px;
+  left: 10px;
+  top: 8px;
+  z-index: 222;
+}
+
+.list {
+  list-style-type: none;
+  gap: 6rem;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  color: #252525;
+}
