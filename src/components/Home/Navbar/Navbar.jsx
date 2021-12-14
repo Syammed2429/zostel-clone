@@ -11,8 +11,10 @@ const Navbar = () => {
                     <img className="logo" src={logo} alt="logo" />
                 </div>
                 <div className="header">
-                    <ul className="d-flex justify-content-end  mx-5 my-3 list text-uppercase">
-                        <li>Hostels</li>
+                    <ul className="d-flex justify-content-end  mx-5 gap-5 my-3 list text-uppercase">
+                        <div className="d-flex">
+                            <li>Hostels</li>
+                        </div>
                         <li>Zostal Homes</li>
                         <li>Travel for Tomorrow</li>
                         <li>Longstays</li>
