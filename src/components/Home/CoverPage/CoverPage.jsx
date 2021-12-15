@@ -44,7 +44,11 @@ const CoverPage = () => {
                 items={images}
                 infinite={true} />
 
-        </div>
+            {/* <div className=" text-center live-it-now" > */}
+            <h1 className="live-it-now">Live it. Now</h1>
+            {/* </div> */}
+
+        </div >
     )
 }
 
