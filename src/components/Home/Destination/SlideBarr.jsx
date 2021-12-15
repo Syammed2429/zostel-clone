@@ -23,54 +23,81 @@ function Slidebarr() {
     return (
         <div>
             <div style={{}}>
-                {" "}
                 <Flickity options={flickityOptions}>
-                    <img
-                        className="slider"
-                        src={alleppey}
-                        alt="alleppey"
-                    />
-                    <img
-                        className="slider "
-                        src={aurangabad}
-                        alt="aurangabad"
-                    />
-                    <img
-                        className="slider "
-                        src={bangalore}
-                        alt="bangalore"
-                    />
-                    <img
-                        className="slider "
-                        src={barot}
-                        alt="barot"
-                    />
-                    <img
-                        className="slider "
-                        src={manali}
-                        alt="manali"
-                    />
                     <div>
+                        <img
+                            className="slider"
+                            src={alleppey}
+                            alt="alleppey"
+                        />
+                        <p>Alleppey</p>
+                    </div>
 
+                    <div>
+                        <img
+                            className="slider "
+                            src={aurangabad}
+                            alt="aurangabad"
+                        />
+                        <p>Aurangabad</p>
+                    </div>
+
+                    <div>
+                        <img
+                            className="slider "
+                            src={bangalore}
+                            alt="bangalore"
+                        />
+                        <p>Bangalore</p>
+                    </div>
+
+                    <div>
+                        <img
+                            className="slider "
+                            src={barot}
+                            alt="barot"
+                        />
+                        <p>Barot</p>
+                    </div>
+
+                    <div>
+                        <img
+                            className="slider "
+                            src={manali}
+                            alt="manali"
+                        />
+                        <p>Manali</p>
+                    </div>
+
+                    <div>
                         <img
                             className="slider"
                             src={mashobra}
                             alt="mashobra"
                         />
-                        <p>Hello</p>
+                        <p>Mashobra</p>
+                    </div>
+
+                    <div>
+                        <img
+                            className="slider "
+                            src={mcleod}
+                            alt="mcleod"
+                        />
+                        <p>Mcleod</p>
+                    </div>
+
+                    <div>
+                        <img
+                            className="slider "
+                            src={mumbai}
+                            alt="mumbai"
+                        />
+                        <p>Mumbai</p>
                     </div>
 
 
-                    <img
-                        className="slider "
-                        src={mcleod}
-                        alt="mcleod"
-                    />
-                    <img
-                        className="slider "
-                        src={mumbai}
-                        alt="mumbai"
-                    />
+
 
 
 

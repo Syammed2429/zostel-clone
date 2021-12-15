@@ -43,6 +43,7 @@ const CoverPage = () => {
                 showNav={false}
                 items={images}
                 infinite={true} />
+
         </div>
     )
 }
