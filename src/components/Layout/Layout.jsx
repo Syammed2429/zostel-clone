@@ -2,6 +2,7 @@ import React from 'react'
 import { CoverPage } from '../Home/CoverPage/CoverPage'
 import { Destination } from '../Home/Destination/Destination'
 import { Footer } from '../Home/Footer/Footer'
+import { GuestReviews } from '../Home/GuestReviews/GuestReviews'
 import { Navbar } from '../Home/Navbar/Navbar'
 import { Search } from '../Home/Search/Search'
 import { WhatsNew } from '../Home/What\'s New/WhatsNew'
@@ -20,6 +21,7 @@ const Layout = () => {
                 <Destination />
                 <ZostelHomes />
                 <ZostelEscape />
+                <GuestReviews />
                 {/* <WhatsNew /> */}
                 <Footer />
             </div>
