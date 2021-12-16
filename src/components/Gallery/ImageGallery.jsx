@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 // import { render } from "react-dom";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import "./CSS/ImageGallery.css"
+import "./ImageGallery.css"
 
 export const ImagesGallery = () => {
 
@@ -33,7 +33,7 @@ export const ImagesGallery = () => {
     return (
         <>
             <div className="cancel-btn">
-                <img src="x-lg.svg" alt="" />
+                <img src="x-lg.svg" alt="cancel" />
             </div>
             {images ? <ImageGallery items={images} /> : null};
         </>
