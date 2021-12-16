@@ -22,7 +22,7 @@ const GuestReviews = () => {
             <div className="container-fluid  col-11 mx-5 text-center m-5 ">
                 <h2 className="d-flex mx-5">GUEST REVIEWS</h2>
                 <Slider {...settings}>
-                    <div className="card container w-75 mx-2" style={{ width: "2rem" }}>
+                    <div className="card container shadow  w-75 mx-2" style={{ width: "2rem" }}>
                         <div className="card-body">
                             <div className="d-flex">
 
