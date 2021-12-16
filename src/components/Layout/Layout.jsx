@@ -11,15 +11,18 @@ import { ZostelEscape } from '../Home/ZostelEscape/ZostelEscape'
 const Layout = () => {
     return (
         <>
-            <Navbar />
-            <br></br>
-            <CoverPage />
-            <Search />
-            <Destination />
-            <ZostelHomes />
-            <ZostelEscape />
-            {/* <WhatsNew /> */}
-            <Footer />
+            <div style={{ background: "#e5e5e5" }}>
+
+                <Navbar />
+                <br></br>
+                <CoverPage />
+                <Search />
+                <Destination />
+                <ZostelHomes />
+                <ZostelEscape />
+                {/* <WhatsNew /> */}
+                <Footer />
+            </div>
         </>
     )
 }

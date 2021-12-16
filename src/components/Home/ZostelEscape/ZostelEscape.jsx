@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import Slider from "react-slick";
+import { Button } from '../Button/Button';
+import { escape } from './zostel-escape.json'
 import annapurna from '../../../assets/images/annapurna.svg'
 import desert from '../../../assets/images/desert-safari.svg'
 import everest from '../../../assets/images/everest-base-camp.svg'
-import { escape } from './zostel-escape.json'
+import inr from '../../../assets/images/inr-logo.svg'
+import star from '../../../assets/images/star.svg'
+import clock from '../../../assets/images/clock.svg'
+import comments from '../../../assets/images/msg.svg'
 
-import { Button } from '../Button/Button';
 
 
 
@@ -39,9 +43,34 @@ const ZostelEscape = () => {
 
                     <div className="card" style={{ width: "2rem" }}>
                         <img src={annapurna} className=" w-100" alt="annapurna" />
+
                         <div className="card-body">
-                            <h3>annapurna, WAYANAD</h3>
-                            <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
+                            <p>ADVENTURE | KATHMANDU</p>
+                            <h3>ANNAPURNA BASE CAMP TREK</h3>
+                            <div className="d-flex card-text justify-content-between">
+                                <div>
+                                    <div className="d-flex">
+
+                                        <img src={inr} alt="inr" />
+                                        <p>14799 Onwards</p>
+                                    </div>
+
+                                    <div className="d-flex">
+                                        <img src={clock} alt="inr" />
+                                        <p>10 Days</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="d-flex">
+                                        <img src={star} alt="ratings" />
+                                        <p>5 Ratings</p>
+                                    </div>
+                                    <div className="d-flex">
+                                        <img src={comments} alt="reviews" />
+                                        <p>10 Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
                             <Button text="Explore" size="col-12" />
                         </div>
                     </div>
@@ -50,19 +79,68 @@ const ZostelEscape = () => {
                     <div className="card" style={{ width: "2rem" }}>
                         <img src={desert} className=" w-100" alt="desert" />
                         <div className="card-body">
-                            <h3>KARAPUZHA, WAYANAD</h3>
-                            <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
-                            <Button text="Explore" size="col-12" />
+                            <p>ADVENTURE | JAISALMER</p>
+                            <h3>DESERT SAFARI</h3>
+                            <div className="d-flex card-text justify-content-between">
+                                <div>
+                                    <div className="d-flex">
 
+                                        <img src={inr} alt="inr" />
+                                        <p>2500 Onwards</p>
+                                    </div>
+
+                                    <div className="d-flex">
+                                        <img src={clock} alt="inr" />
+                                        <p>1 Days</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="d-flex">
+                                        <img src={star} alt="ratings" />
+                                        <p>5.0 Rating</p>
+                                    </div>
+                                    <div className="d-flex">
+                                        <img src={comments} alt="reviews" />
+                                        <p>12 Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <Button text="Explore" size="col-12" />
                         </div>
+
+
                     </div>
 
 
                     <div className="card" style={{ width: "2rem" }}>
                         <img src={everest} className=" w-100" alt="everest" />
                         <div className="card-body">
-                            <h3>KARAPUZHA, WAYANAD</h3>
-                            <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
+                            <p>ADVENTURE | KATHMANDU</p>
+                            <h3>EVEREST BASE CAMP</h3>
+                            <div className="d-flex card-text justify-content-between">
+                                <div>
+                                    <div className="d-flex">
+
+                                        <img src={inr} alt="inr" />
+                                        <p>38499 Onwards</p>
+                                    </div>
+
+                                    <div className="d-flex">
+                                        <img src={clock} alt="inr" />
+                                        <p>12 Days</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="d-flex">
+                                        <img src={star} alt="ratings" />
+                                        <p>5.0 Rating</p>
+                                    </div>
+                                    <div className="d-flex">
+                                        <img src={comments} alt="reviews" />
+                                        <p>10 Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
                             <Button text="Explore" size="col-12" />
                         </div>
                     </div>
