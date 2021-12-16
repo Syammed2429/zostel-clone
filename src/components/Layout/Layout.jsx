@@ -6,6 +6,7 @@ import { Navbar } from '../Home/Navbar/Navbar'
 import { Search } from '../Home/Search/Search'
 import { WhatsNew } from '../Home/What\'s New/WhatsNew'
 import { ZostelHomes } from '../Home/Zostel-Homes/ZostelHomes'
+import { ZostelEscape } from '../Home/ZostelEscape/ZostelEscape'
 
 const Layout = () => {
     return (
@@ -16,6 +17,7 @@ const Layout = () => {
             <Search />
             <Destination />
             <ZostelHomes />
+            <ZostelEscape />
             {/* <WhatsNew /> */}
             <Footer />
         </>

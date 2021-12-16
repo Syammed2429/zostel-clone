@@ -15,13 +15,13 @@ const ZostelHomes = () => {
     const settings = {
         // centerMode: true,
         infinite: false,
-        centerPadding: "120px",
+        // centerPadding: "120px",
         slidesToShow: 3,
         className: "center",
         speed: 500,
         swipeToSlide: true,
+        arrows: true,
 
-        // slidesPerRow: 2
 
     };
 
@@ -32,68 +32,68 @@ const ZostelHomes = () => {
                 <h2>Zostel Homes</h2>
                 <Slider {...settings}>
 
-                    <div class="card" style="width: 12rem;">
-                        <img src={karapuzha} className=" w-100" alt="..." />
-                        <div class="card-body">
+                    <div className="card" style={{ width: "2rem" }}>
+                        <img src={karapuzha} className=" w-100" alt="karapuzha" />
+                        <div className="card-body">
                             <h3>KARAPUZHA, WAYANAD</h3>
-                            <p class="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
-                            <Button text="Explore" size="col-12" color="" />
+                            <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
+                            <Button text="Explore" size="col-12" />
                         </div>
                     </div>
 
 
-                    <div class="card" style="width: 12rem;">
-                        <img src={thirunelly} className=" w-100" alt="..." />
-                        <div class="card-body">
+                    <div className="card" style={{ width: "2rem" }}>
+                        <img src={thirunelly} className=" w-100" alt="thirunelly" />
+                        <div className="card-body">
                             <h3>KARAPUZHA, WAYANAD</h3>
-                            <p class="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
-                            <Button text="Explore" size="col-12" color="" />
-
-                        </div>
-                    </div>
-
-
-                    <div class="card" style="width: 12rem;">
-                        <img src={pushkar} className=" w-100" alt="..." />
-                        <div class="card-body">
-                            <h3>KARAPUZHA, WAYANAD</h3>
-                            <p class="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
-                            <Button text="Explore" size="col-12" color="" />
+                            <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
+                            <Button text="Explore" size="col-12" />
 
                         </div>
                     </div>
 
 
-
-                    <div class="card" style="width: 12rem;">
-                        <img src={kotkhai} className=" w-100" alt="..." />
-                        <div class="card-body">
+                    <div className="card" style={{ width: "2rem" }}>
+                        <img src={pushkar} className=" w-100" alt="pushkar" />
+                        <div className="card-body">
                             <h3>KARAPUZHA, WAYANAD</h3>
-                            <p class="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
-                            <Button text="Explore" size="col-12" color="" />
-
-                        </div>
-                    </div>
-
-
-                    <div class="card" style="width: 12rem;">
-                        <img src={rashil} className=" w-100" alt="..." />
-                        <div class="card-body">
-                            <h3>KARAPUZHA, WAYANAD</h3>
-                            <p class="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
-                            <Button text="Explore" size="col-12" color="" />
+                            <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
+                            <Button text="Explore" size="col-12" />
 
                         </div>
                     </div>
 
 
 
-                    <div class="card" style="width: 12rem;">
-                        <img src={cheog} className=" w-100" alt="..." />
-                        <div class="card-body">
+                    <div className="card" style={{ width: "2rem" }}>
+                        <img src={kotkhai} className=" w-100" alt="kotkhai" />
+                        <div className="card-body">
                             <h3>KARAPUZHA, WAYANAD</h3>
-                            <p class="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
-                            <Button text="Explore" size="col-12" color="" />
+                            <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
+                            <Button text="Explore" size="col-12" />
+
+                        </div>
+                    </div>
+
+
+                    <div className="card" style={{ width: "2rem" }}>
+                        <img src={rashil} className=" w-100" alt="rashil" />
+                        <div className="card-body">
+                            <h3>KARAPUZHA, WAYANAD</h3>
+                            <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
+                            <Button text="Explore" size="col-12" />
+
+                        </div>
+                    </div>
+
+
+
+                    <div className="card" style={{ width: "2rem" }}>
+                        <img src={cheog} className=" w-100" alt="cheog" />
+                        <div className="card-body">
+                            <h3>KARAPUZHA, WAYANAD</h3>
+                            <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
+                            <Button text="Explore" size="col-12" />
 
                         </div>
                     </div>
