@@ -1,6 +1,7 @@
 import React from "react";
-import Flickity from "react-flickity-component";
-import "./Slidebar.css";
+import Slider from "react-slick";
+
+//Images
 import alleppey from '../../../assets/images/Alleppey.svg'
 import aurangabad from '../../../assets/images/aurangabad.svg'
 import bangalore from '../../../assets/images/Bangalore.svg'
@@ -9,104 +10,205 @@ import manali from '../../../assets/images/Manali.svg'
 import mashobra from '../../../assets/images/Mashobra.svg'
 import mcleod from '../../../assets/images/mcledo.svg'
 import mumbai from '../../../assets/images/mumbai.svg'
+import bir from '../../../assets/images/bir.svg'
+import kinnaur from '../../../assets/images/kinnaur.svg'
+import assam from '../../../assets/images/Assam.svg'
+import coorg from '../../../assets/images/coorg.svg'
+import mysore from '../../../assets/images/mysore.svg'
+import salmer from '../../../assets/images/jaisalmer.svg'
+import munroe from '../../../assets/images/munroe.svg'
+import chennai from '../../../assets/images/chennai.svg'
 
 
-const flickityOptions = {
-    groupCells: true,
-    imagesLoaded: true,
-    pageDots: true,
-    contain: true,
-    asNavFor: ".carousel-main"
+
+
+const settings = {
+    // centerMode: true,
+    infinite: false,
+    centerPadding: "60px",
+    slidesToShow: 2,
+    speed: 500,
+    rows: 2,
+    slidesPerRow: 2
 };
 
-function Slidebarr() {
+const Slidebar = () => {
+
+
+
     return (
         <div>
-            <div style={{}}>
-                <Flickity options={flickityOptions}>
+
+            <div>
+                <Slider {...settings}>
                     <div>
                         <img
-                            className="slider"
+                            className="img-fluid w-75 shadow "
                             src={alleppey}
                             alt="alleppey"
                         />
-                        <p>Alleppey</p>
+                        <p className="text-center"> Alleppey</p>
                     </div>
 
                     <div>
                         <img
-                            className="slider "
+                            className="img-fluid w-75    shadow"
                             src={aurangabad}
                             alt="aurangabad"
                         />
-                        <p>Aurangabad</p>
+                        <p className="text-center">Aurangabad</p>
                     </div>
 
                     <div>
                         <img
-                            className="slider "
+                            className="img-fluid w-75  shadow"
                             src={bangalore}
                             alt="bangalore"
                         />
-                        <p>Bangalore</p>
+                        <p className="text-center"> Bangalore</p>
                     </div>
 
                     <div>
                         <img
-                            className="slider "
+                            className="img-fluid w-75 shadow"
                             src={barot}
                             alt="barot"
                         />
-                        <p>Barot</p>
+                        <p className="text-center"> Barot</p>
                     </div>
 
                     <div>
                         <img
-                            className="slider "
+                            className="img-fluid w-75 mx-4 shadow"
                             src={manali}
                             alt="manali"
                         />
-                        <p>Manali</p>
+                        <p className="text-center"> Manali</p>
                     </div>
 
                     <div>
                         <img
-                            className="slider"
+                            className="img-fluid w-75 shadow"
                             src={mashobra}
                             alt="mashobra"
                         />
-                        <p>Mashobra</p>
+                        <p className="text-center"> Mashobra</p>
                     </div>
 
                     <div>
                         <img
-                            className="slider "
+                            className="img-fluid w-75 shadow"
                             src={mcleod}
                             alt="mcleod"
                         />
-                        <p>Mcleod</p>
+                        <p className="text-center"> Mcleod</p>
                     </div>
 
                     <div>
                         <img
-                            className="slider "
+                            className="img-fluid w-75 shadow"
                             src={mumbai}
                             alt="mumbai"
                         />
-                        <p>Mumbai</p>
+                        <p className="text-center"> Mumbai</p>
                     </div>
 
 
 
+                    <div>
+                        <img
+                            className="img-fluid w-75 shadow"
+                            src={bir}
+                            alt="mumbai"
+                        />
+                        <p className="text-center"> Bir</p>
+                    </div>
+
+                    <div>
+                        <img
+                            className="img-fluid w-75 shadow"
+                            src={kinnaur}
+                            alt="kinnaur"
+                        />
+                        <p className="text-center"> kinnaur</p>
+                    </div>
+
+                    <div>
+                        <img
+                            className="img-fluid w-75 shadow"
+                            src={assam}
+                            alt="assam"
+                        />
+                        <p className="text-center"> assam</p>
+                    </div>
+
+
+                    <div>
+                        <img
+                            className="img-fluid w-75 shadow"
+                            src={coorg}
+                            alt="coorg"
+                        />
+                        <p className="text-center"> coorg</p>
+                    </div>
+                    <div>
+                        <img
+                            className="img-fluid w-75 shadow"
+                            src={mysore}
+                            alt="mysore"
+                        />
+                        <p className="text-center"> mysore</p>
+                    </div>
+
+                    <div>
+                        <img
+                            className="img-fluid w-75 shadow"
+                            src={salmer}
+                            alt="salmer"
+                        />
+                        <p className="text-center"> salmer</p>
+                    </div>
+
+                    <div>
+                        <img
+                            className="img-fluid w-75 shadow"
+                            src={munroe}
+                            alt="munroe"
+                        />
+                        <p className="text-center"> munroe</p>
+                    </div>
+
+                    <div>
+                        <img
+                            className="img-fluid w-75 shadow"
+                            src={chennai}
+                            alt="chennai"
+                        />
+                        <p className="text-center"> chennai</p>
+                    </div>
 
 
 
-
-                </Flickity>
-
+                </Slider>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
     );
 }
 
-export default Slidebarr;
+export { Slidebar };

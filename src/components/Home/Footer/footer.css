@@ -1,13 +1,6 @@
-@font-face {
-  font-family: "selima";
-  src: url("./selima_-webfont.woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .back {
   background: #2d3748;
-  font-family: selimaregular;
+  font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
