@@ -1,0 +1,6 @@
+.cancel-btn{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+    margin-top: 10px;
+}
