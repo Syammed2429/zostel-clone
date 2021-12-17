@@ -6,6 +6,7 @@ import landingPic2 from '../../../assets/images/landingpage2.svg'
 import landingPic3 from '../../../assets/images/landingpage3.svg'
 import landingPic4 from '../../../assets/images/landingpage4.svg'
 import landingPic5 from '../../../assets/images/landingpage5.svg'
+import { SlideShow } from './SlideShow';
 
 
 
@@ -33,7 +34,7 @@ const images = [
 const CoverPage = () => {
     return (
         < div className="img-fluid">
-            <ImageGallery
+            {/* <ImageGallery
                 slideDuration={1000}
                 swipingTransitionDuration={1}
                 slideInterval={4000}
@@ -42,12 +43,12 @@ const CoverPage = () => {
                 autoPlay={true}
                 showNav={false}
                 items={images}
-                infinite={true} />
+                infinite={true} /> */}
 
             {/* <div className=" text-center live-it-now" > */}
-            <h1 className="live-it-now">Live it. Now</h1>
             {/* </div> */}
-
+            <SlideShow />
+            <h1 className="live-it-now">Live it. Now</h1>
         </div >
     )
 }
