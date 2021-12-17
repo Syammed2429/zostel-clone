@@ -2,8 +2,24 @@ import React from 'react'
 import logo from '../../../assets/images/zostel-logo.svg'
 import './navbar.css'
 
+const styles = {
+    show: {
+        display: 'flex',
+
+
+    },
+    hidden: {
+        display: 'none'
+    }
+}
+
+
 
 const Navbar = () => {
+    const [display, setDisplay] = React.useState(styles.hidden)
+
+
+
     return (
         <>
             <div>
@@ -15,7 +31,40 @@ const Navbar = () => {
                         <div className="d-flex">
                             <li>Hostels</li>
                         </div>
-                        <li>Zostal Homes</li>
+                        <li
+                            onClick={() => {
+                                setDisplay(display === styles.hidden ? styles.show : styles.hidden)
+                            }}
+                        >Zostal Homes</li>
+                        <div
+                            className="card shadow row dropDown"
+                            style={{ ...display }}>
+                            <div className="col d-flex gap-2">
+                                <div className="row">
+                                    <li>adf</li>
+                                    <li>adf</li>
+                                    <li>adf</li>
+                                    <li>adf</li>
+                                    <li>adf</li>
+
+
+                                </div>
+
+                            </div>
+                            <div className="row d-flex gap-2">
+
+                                <li>adf</li>
+                                <li>adf</li>
+                                <li>adf</li>
+                                <li>adf</li>
+                                <li>adf</li>
+
+
+
+                            </div>
+
+                        </div>
+
                         <li>Travel for Tomorrow</li>
                         <li>Longstays</li>
                         <li>Book Now</li>
@@ -24,7 +73,7 @@ const Navbar = () => {
                         <li>Blog</li>
                     </ul>
                 </div>
-            </div>
+            </div >
         </>
     )
 }
