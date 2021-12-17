@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import "./Information.css"
+import { Navbar } from "../Home/Navbar/Navbar";
+import { Footer } from "../Description/about/Footer";
 
 
 export const InformationPage = () => {
@@ -52,6 +54,8 @@ export const InformationPage = () => {
     });
 
     return (
+        <>
+        <Navbar />
         <div className='info-main-wrapper'>
             <div className="heading">
                 <img src="BackArrow.svg" alt="Back" />
@@ -184,10 +188,10 @@ export const InformationPage = () => {
 
             </section>
 
-            <section className='policy'>
+            <section className='policy' id='last-policy'>
                 <div className='left'>
                     <div className='title'>
-                        <h4>Property Policy</h4>
+                        <h4>Cancellation Policy</h4>
                     </div>
                     <div className='rules'>
                         <p>- At the time of check-in, all guests are required to present either a negative RT-PCR report not older than 72 hours, or a double-vaccination certificate.</p>
@@ -202,5 +206,7 @@ export const InformationPage = () => {
             </section>
 
         </div>
+        <Footer />
+        </>
     )
 }

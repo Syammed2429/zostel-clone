@@ -3,7 +3,7 @@
 }
 .info-main-wrapper{
     margin: 0 calc(100% - 1440px);
-    
+    margin-top: 52px;
 }
 .heading{
     display: flex;
@@ -301,10 +301,14 @@ section.info-top-cont .left .guest-info form p span{
 
 section.policy{
     width: 845px;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border: 1px solid #C7C7C7;
     box-sizing: border-box;
     border-radius: 6px;
+}
+.info-main-wrapper #last-policy{
+    margin-bottom: 140px;
 }
 section.policy .left .title{
     align-items: center;
