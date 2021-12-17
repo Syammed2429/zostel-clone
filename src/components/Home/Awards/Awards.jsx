@@ -16,44 +16,45 @@ const Awards = () => {
         dots: false,
         infinite: false,
         speed: 1000,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 3,
         arrows: true,
     };
 
     return (
         <>
-            <div className="container-fluid  col-11 mx-5 text-center m-5">
-                <h2 className="d-flex mx-5">Awards</h2>
+            <div className="container-fluid  col-11 my-5 ">
+                <h2>Awards & Media</h2>
 
-                <div className="  d-flex ">
-                    {/* <Slider {...settings}> */}
-                    <div className=" ">
-                        <img className="" src={a1} alt="featured1" />
+                <div className="container-fluid ">
+                    <Slider {...settings}>
+                        <div className="">
+                            <img className="img-fluid" src={a1} alt="featured1" />
 
-                    </div>
-                    <div>
-                        <img className="" src={a2} alt="featured1" />
+                        </div >
+                        <div className=" ">
+                            <img className="" src={a2} alt="featured1" />
 
-                    </div>
-                    <div>
-                        <img className="" src={a3} alt="featured1" />
+                        </div>
+                        <div className="">
+                            <img className="" src={a3} alt="featured1" />
 
-                    </div>
-                    {/* <div>
-                        <img className="" src={a4} alt="featured1" />
+                        </div>
+                        <div>
+                            <img className="" src={a4} alt="featured1" />
 
-                    </div>
-                    <div>
-                        <img className="" src={a5} alt="featured1" />
+                        </div>
 
-                    </div>
-                    <div>
-                        <img className="" src={a6} alt="featured1" />
+                        <div>
+                            <img className="" src={a5} alt="featured1" />
 
-                    </div> */}
+                        </div>
+                        <div>
+                            <img className="" src={a6} alt="featured1" />
 
-                    {/* </Slider> */}
+                        </div>
+
+                    </Slider>
                 </div>
             </div>
 
