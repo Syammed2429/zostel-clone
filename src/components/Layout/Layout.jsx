@@ -1,4 +1,5 @@
 import React from 'react'
+import { Awards } from '../Home/Awards/Awards'
 import { CoverPage } from '../Home/CoverPage/CoverPage'
 import { Destination } from '../Home/Destination/Destination'
 import { FeaturedHostels } from '../Home/FeaturedHostels/FeaturedHostels'
@@ -25,6 +26,8 @@ const Layout = () => {
                 <ZostelEscape />
                 <FeaturedHostels />
                 <GuestReviews />
+                <WhatsNew />
+                <Awards />
                 <Footer />
             </div>
         </>

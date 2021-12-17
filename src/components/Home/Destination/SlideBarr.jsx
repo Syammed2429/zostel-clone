@@ -26,7 +26,7 @@ import chennai from '../../../assets/images/chennai.svg'
 const settings = {
     // centerMode: true,
     infinite: false,
-    centerPadding: "60px",
+    // centerPadding: "60px",
     slidesToShow: 2,
     speed: 500,
     rows: 2,
@@ -40,7 +40,7 @@ const Slidebar = () => {
     return (
         <div>
 
-            <div>
+            <div >
                 <Slider {...settings}>
                     <div>
                         <img
@@ -48,7 +48,7 @@ const Slidebar = () => {
                             src={alleppey}
                             alt="alleppey"
                         />
-                        <p className="text-center"> Alleppey</p>
+                        <p className="text-center col-9"> Alleppey</p>
                     </div>
 
                     <div>
@@ -57,7 +57,7 @@ const Slidebar = () => {
                             src={aurangabad}
                             alt="aurangabad"
                         />
-                        <p className="text-center">Aurangabad</p>
+                        <p className="text-center col-9">Aurangabad</p>
                     </div>
 
                     <div>
@@ -66,7 +66,7 @@ const Slidebar = () => {
                             src={bangalore}
                             alt="bangalore"
                         />
-                        <p className="text-center"> Bangalore</p>
+                        <p className="text-center col-9"> Bangalore</p>
                     </div>
 
                     <div>
@@ -75,7 +75,7 @@ const Slidebar = () => {
                             src={barot}
                             alt="barot"
                         />
-                        <p className="text-center"> Barot</p>
+                        <p className="text-center col-9"> Barot</p>
                     </div>
 
                     <div>
@@ -84,7 +84,7 @@ const Slidebar = () => {
                             src={manali}
                             alt="manali"
                         />
-                        <p className="text-center"> Manali</p>
+                        <p className="text-center col-9"> Manali</p>
                     </div>
 
                     <div>
@@ -93,7 +93,7 @@ const Slidebar = () => {
                             src={mashobra}
                             alt="mashobra"
                         />
-                        <p className="text-center"> Mashobra</p>
+                        <p className="text-center col-9"> Mashobra</p>
                     </div>
 
                     <div>
@@ -102,7 +102,7 @@ const Slidebar = () => {
                             src={mcleod}
                             alt="mcleod"
                         />
-                        <p className="text-center"> Mcleod</p>
+                        <p className="text-center col-9"> Mcleod</p>
                     </div>
 
                     <div>
@@ -111,7 +111,7 @@ const Slidebar = () => {
                             src={mumbai}
                             alt="mumbai"
                         />
-                        <p className="text-center"> Mumbai</p>
+                        <p className="text-center col-9"> Mumbai</p>
                     </div>
 
 
@@ -122,7 +122,7 @@ const Slidebar = () => {
                             src={bir}
                             alt="mumbai"
                         />
-                        <p className="text-center"> Bir</p>
+                        <p className="text-center col-9"> Bir</p>
                     </div>
 
                     <div>
@@ -131,7 +131,7 @@ const Slidebar = () => {
                             src={kinnaur}
                             alt="kinnaur"
                         />
-                        <p className="text-center"> kinnaur</p>
+                        <p className="text-center col-9"> kinnaur</p>
                     </div>
 
                     <div>
@@ -140,7 +140,7 @@ const Slidebar = () => {
                             src={assam}
                             alt="assam"
                         />
-                        <p className="text-center"> assam</p>
+                        <p className="text-center col-9"> assam</p>
                     </div>
 
 
@@ -150,7 +150,7 @@ const Slidebar = () => {
                             src={coorg}
                             alt="coorg"
                         />
-                        <p className="text-center"> coorg</p>
+                        <p className="text-center col-9"> coorg</p>
                     </div>
                     <div>
                         <img
@@ -158,7 +158,7 @@ const Slidebar = () => {
                             src={mysore}
                             alt="mysore"
                         />
-                        <p className="text-center"> mysore</p>
+                        <p className="text-center col-9"> mysore</p>
                     </div>
 
                     <div>
@@ -167,7 +167,7 @@ const Slidebar = () => {
                             src={salmer}
                             alt="salmer"
                         />
-                        <p className="text-center"> salmer</p>
+                        <p className="text-center col-9"> salmer</p>
                     </div>
 
                     <div>
@@ -176,7 +176,7 @@ const Slidebar = () => {
                             src={munroe}
                             alt="munroe"
                         />
-                        <p className="text-center"> munroe</p>
+                        <p className="text-center col-9"> munroe</p>
                     </div>
 
                     <div>
@@ -185,7 +185,7 @@ const Slidebar = () => {
                             src={chennai}
                             alt="chennai"
                         />
-                        <p className="text-center"> chennai</p>
+                        <p className="text-center col-9"> chennai</p>
                     </div>
 
 
