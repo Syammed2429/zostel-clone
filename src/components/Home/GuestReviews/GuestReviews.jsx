@@ -26,7 +26,7 @@ const GuestReviews = () => {
                 <Slider {...settings}>
                     <div className="card container shadow  w-75 mx-2" style={{ width: "2rem" }}>
                         <div className="card-body">
-                            <div className="d-flex justify-content-between">
+                            <div className="d-flex justify-content-between ">
 
                                 <img src={booking} alt="inr" />
                                 <div className="d-flex flex-row-reverse ">

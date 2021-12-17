@@ -20,11 +20,11 @@ const Layout = () => {
                 <CoverPage />
                 <Search />
                 <Destination />
+                <WhatsNew />
                 <ZostelHomes />
                 <ZostelEscape />
                 <FeaturedHostels />
                 <GuestReviews />
-                {/* <WhatsNew /> */}
                 <Footer />
             </div>
         </>
