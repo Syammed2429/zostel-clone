@@ -37,20 +37,7 @@ const WhatsNew = () => {
             </div>
 
 
-            <h1>Test</h1>
-            <div className="row col-1 px-4 mx-5">
-                <div className="col-6">
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                </div>
-                <div className="col-4">
-                    <li>bello</li>
-                    <li>bello</li>
-                    <li>bello</li>
-                </div>
 
-            </div>
 
 
         </>
