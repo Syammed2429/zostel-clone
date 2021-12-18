@@ -19,7 +19,7 @@ const Layout = () => {
                 <Navbar />
                 <br></br>
                 <CoverPage />
-                <Search />
+                < Search />
                 <Destination />
                 <WhatsNew />
                 <ZostelHomes />
