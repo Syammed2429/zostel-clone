@@ -20,6 +20,7 @@ const styles = {
 const Navbar = () => {
     const [hostels, setHostels] = React.useState(styles.hidden)
     const [zostelHomes, setZostelHomes] = React.useState(styles.hidden)
+    const [joinUs, setJoinUs] = React.useState(styles.hidden)
 
 
 
@@ -32,9 +33,11 @@ const Navbar = () => {
                 <div className="header">
                     <ul className="d-flex justify-content-end  mx-5 gap-5 my-3 list text-uppercase">
                         <div className="d-flex">
-                            <li onClick={() => {
-                                setHostels(hostels === styles.hidden ? styles.show : styles.hidden)
-                            }}>Hostels</li>
+                            <li
+                                className="menu-options"
+                                onClick={() => {
+                                    setHostels(hostels === styles.hidden ? styles.show : styles.hidden)
+                                }}>Hostels</li>
                             <div
 
                                 style={{ ...hostels }}
@@ -89,6 +92,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <li
+                            className="menu-options"
                             onClick={() => {
                                 setZostelHomes(zostelHomes === styles.hidden ? styles.show : styles.hidden);
                             }}
@@ -96,19 +100,70 @@ const Navbar = () => {
                         <div
 
                             style={{ ...zostelHomes }}
-                            className="col bg-black text-white  px-4 mx-5 dropDown ">
-                            <li>What are Zostek Homes</li>
+                            className="col bg-black text-white zostal-homes  px-4 mx-5 dropDown ">
+                            <div className="">
+                                <li>What are Zostel Homes</li>
+                                <li>Karupuzha, Wayanad</li>
+                                <li>Thirunelly, Wayanad</li>
+                                <li>Pushkar, Rajasthan</li>
+                                <li>Kotkhai, Shimla</li>
+                                <li>Rashil, Lahaul</li>
+                                <li>Madikeri, Coorg</li>
+                                <li>Burwa, Manali</li>
+                                <li>Theog, Shimla</li>
+                                <li>Cheog, Shimla</li>
+                                <li>Rakchham, Kinnaur</li>
+                                <li>Mashobra, Shimla</li>
+                                <li>Rumsu, Manali</li>
+                                <li>Tabo, Spiti</li>
+                                <li>Kotgarh, Shimla</li>
+                                <li>Laida, Jibhi</li>
+                                <li>Dobhi, Kullu</li>
+                                <li>Shuru, Manali</li>
+                                <li>Kibber, Spiti</li>
+                            </div>
+
                         </div>
 
 
 
 
-                        <li>Travel for Tomorrow</li>
-                        <li>Longstays</li>
-                        <li>Book Now</li>
-                        <li>Join us</li>
-                        <li>Franchise</li>
-                        <li>Blog</li>
+                        <li
+                            className="menu-options"
+                        >Travel for Tomorrow</li>
+                        <li
+                            className="menu-options"
+                        >Longstays</li>
+                        <li
+                            className="menu-options"
+                        >Book Now</li>
+
+                        <li
+                            className="menu-options"
+                            onClick={() => {
+                                setJoinUs(joinUs === styles.hidden ? styles.show : styles.hidden)
+                            }}>Join us</li>
+                        <div
+
+                            style={{ ...joinUs }}
+                            className="col bg-black text-white  px-4 mx-5 dropDown join-us">
+                            <div>
+                                <li>Zostel Volunteer</li>
+                                <li>Careers</li>
+                                <li>Host an event</li>
+                                <li>List your experience</li>
+
+                            </div>
+                        </div>
+
+
+
+                        <li
+                            className="menu-options option"
+                        >Franchise</li>
+                        <li
+                            className="menu-options"
+                        >Blog</li>
                     </ul>
                 </div>
             </div >
@@ -121,10 +176,3 @@ export { Navbar }
 
 
 
-/* 
-
-
-
-                        
-
-*/

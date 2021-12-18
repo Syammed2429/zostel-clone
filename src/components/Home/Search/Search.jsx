@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../Button/Button'
 import './search.css'
 // import cities from './cities.json'
 
@@ -13,7 +14,7 @@ const visible = {
 }
 
 const Search = () => {
-    const [display, setDisplay] = React.useState(visible.hide || visible.show)
+    const [select, setSelect] = React.useState("Select")
 
     const [cities, setCities] = React.useState("")
 
@@ -56,6 +57,15 @@ const Search = () => {
                         </div> */}
 
 
+                        <div >{select}</div>
+                        <div
+                            onClick={() => {
+                                setSelect()
+                            }}>
+                            <li>wfdwf</li>
+                            <li>87</li>
+                            <li>32r</li>
+                        </div>
 
                         <select
                             className="bg-warning"
@@ -120,19 +130,11 @@ const Search = () => {
                         <input type="date" name="" id="" />
                         <input type="text" name="" id="" />
                         <input type="text" name="" id="" />
+                        <Button text="Book Now" />
                     </div>
                 </div>
 
-                <div className="dropdown">
-                    <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </button>
-                    <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><button className="dropdown-item" type="button">Action</button></li>
-                        <li><button className="dropdown-item" type="button">Another action</button></li>
-                        <li><button className="dropdown-item" type="button">Something else here</button></li>
-                    </ul>
-                </div>
+
 
             </div >
         </>
