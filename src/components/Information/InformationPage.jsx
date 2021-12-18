@@ -1,14 +1,13 @@
 import React, { useState, useContext } from 'react'
 import "./Information.css"
-import { Navbar } from "../Home/Navbar/Navbar";
 import { Footer } from "../Description/about/Footer";
 import { SummaryContext } from '../context/SummaryContext';
 import dateFormat from "dateformat";
-
+import { Link, useHistory } from 'react-router-dom'
 
 export const InformationPage = () => {
+    const history = useHistory();
     const { summary, setSummary } = useContext(SummaryContext);
-    console.log(summary);
 
     const [formdata, setFormData] = useState({
         firstname: "",
@@ -18,7 +17,7 @@ export const InformationPage = () => {
         email: "",
         number: "",
         address: "",
-        agree: false,
+        agree: true,
 
     });
 
@@ -33,6 +32,7 @@ export const InformationPage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
         fetch("http://localhost:3001/guests", {
             method: 'POST',
             body: JSON.stringify({
@@ -42,6 +42,15 @@ export const InformationPage = () => {
                 "Content-Type": "application/json"
             },
         })
+
+        if (formdata.address.length <= 10 && formdata.agree === true && formdata.email.length <= 5 && formdata.firstname.length <= 5 && formdata.lastname.length <= 5) {
+            return
+        } else {
+            history.push("/loading")
+        }
+
+
+
     }
 
     var elems = document.querySelectorAll('.check-box');
@@ -59,10 +68,9 @@ export const InformationPage = () => {
 
     return (
         <>
-            <Navbar />
             <div className='info-main-wrapper'>
                 <div className="heading">
-                    <img src="BackArrow.svg" alt="Back" />
+                    <Link to="/booking"><img style={{ marginTop: "17px" }} src="BackArrow.svg" alt="Back" /></Link>
                     <h2>Confirm your booking</h2>
                 </div>
 
@@ -89,13 +97,13 @@ export const InformationPage = () => {
                             <form onSubmit={handleSubmit}>
                                 <div className='form-input name'>
                                     <label>Name</label>
-                                    <input id="inp" type="text" name="firstname" onChange={handleChange} placeholder='Enter the first name' />
-                                    <input id="inp" type="text" name="middlename" onChange={handleChange} placeholder='Enter the middle name' />
-                                    <input id="inp" type="text" name="lastname" onChange={handleChange} placeholder='Enter the last name' />
+                                    <input required id="inp" type="text" name="firstname" onChange={handleChange} placeholder='Enter the first name' />
+                                    <input required id="inp" type="text" name="middlename" onChange={handleChange} placeholder='Enter the middle name' />
+                                    <input required id="inp" type="text" name="lastname" onChange={handleChange} placeholder='Enter the last name' />
                                 </div>
                                 <div className='form-input'>
                                     <label className='form-input'>Gender</label>
-                                    <select id="inp" name="gender" onChange={handleChange}>
+                                    <select id="inp" name="gender" onChange={handleChange} required>
                                         <option value="">Select Gender</option>
                                         <option value="male">Male</option>
                                         <option value="female">Female</option>
@@ -104,11 +112,11 @@ export const InformationPage = () => {
                                 </div>
                                 <div className='form-input'>
                                     <label>Email</label>
-                                    <input id="inp" name="email" type="email" onChange={handleChange} placeholder='Select the email' />
+                                    <input id="inp" name="email" type="email" onChange={handleChange} placeholder='Select the email' required />
                                 </div>
                                 <div className='form-input'>
                                     <label>Number</label>
-                                    <input id="inp" name="phone" type="number" onChange={handleChange} placeholder='Enter phone number' />
+                                    <input id="inp" name="phone" type="number" onChange={handleChange} placeholder='Enter phone number' required />
                                 </div>
                                 <div className='form-input'>
                                     <label>Address</label>

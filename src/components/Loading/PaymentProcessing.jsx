@@ -31,7 +31,7 @@ const LogoCont = styled.div`
     
 `;
 
-export const LoadingPage = () => {
+export const PaymentProcess = () => {
     const params = useParams()
     console.log('params:', params)
     const history = useHistory()
@@ -39,7 +39,7 @@ export const LoadingPage = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            return history.push("/payment")
+            return history.push("/success")
         }, 3000)
 
     }, [history]);

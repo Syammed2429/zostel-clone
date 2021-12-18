@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button } from '../Button/Button'
 import './search.css'
+import { Link } from 'react-router-dom'
 // import cities from './cities.json'
 
 
@@ -16,11 +16,11 @@ const visible = {
 const Search = () => {
     const [select, setSelect] = React.useState("Select")
 
-    const [cities, setCities] = React.useState("")
+    const [cities, setCities] = React.useState("Select Destination")
 
     return (
         <>
-            <div className="background ">
+            <div className="background">
                 <div className="option1">
                     <p>Zostel</p>
                 </div>
@@ -30,8 +30,8 @@ const Search = () => {
                 </div>
 
 
-                <div className="row container text-center">
-                    <div className="col">
+                <div className="container ">
+                    <div className="d-flex gap-2">
 
                         {/* <div
                             className="row bg-secondary w-25"
@@ -57,18 +57,19 @@ const Search = () => {
                         </div> */}
 
 
-                        <div >{select}</div>
-                        <div
+                        {/* <div >{select}</div> */}
+                        {/* <div
                             onClick={() => {
                                 setSelect()
                             }}>
                             <li>wfdwf</li>
                             <li>87</li>
                             <li>32r</li>
-                        </div>
+                        </div> */}
 
                         <select
-                            className="bg-warning"
+                            style={{ color: "#F1563F" }}
+                            className="bg-warning bg-white py-3 col-4 btn"
                             onChange={(e) => setCities(e.target.value)}
                             value="Select Destionation">
                             {cities}
@@ -126,11 +127,21 @@ const Search = () => {
                             <option value="WAYANAD">WAYANAD</option>
                         </select>
 
+                        {/* <div> */}
 
-                        <input type="date" name="" id="" />
-                        <input type="text" name="" id="" />
-                        <input type="text" name="" id="" />
-                        <Button text="Book Now" />
+                        <input
+                            style={{ background: "#F1563F" }}
+                            className="py-2 btn  col-2" type="date" name="" id="" />
+                        <input
+                            style={{ background: "#F1563F" }}
+                            className=" py-2 btn col-2" type="date" name="" id="" />
+                        <div></div>
+                        <Link to="/booking">
+                            <button
+                                style={{ background: "#F1563F" }}
+                                className="col-5 py-2 size btn text-uppercase text-white">Book Now</button>
+                        </Link>
+                        {/* </div> */}
                     </div>
                 </div>
 

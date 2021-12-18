@@ -17,6 +17,7 @@ import television from '../../../assets/images/television.svg'
 import bagsuitcase from '../../../assets/images/bagsuitcase.svg'
 import cafe from '../../../assets/images/cafe.svg'
 import water from '../../../assets/images/water.svg'
+import { Link } from 'react-router-dom'
 
 function Header() {
     const myFunction = () => {
@@ -47,9 +48,11 @@ function Header() {
                         <div> <img className={styles.lastImg} src="https://img.cdn.zo.xyz/zostel/gallery/images/15R001HDS2Cc_wCv97eAPQ/manali-garden-cafe-20201105110535.jpg?w=1280" alt="" /></div>
                     </div>
                 </div>
-                <div className={styles.viewAllImg}>
-                    <img src={viewPhoto} alt="" />
-                </div>
+                <Link to="/gallery">
+                    <div className={styles.viewAllImg}>
+                        <img src={viewPhoto} alt="" />
+                    </div>
+                </Link>
 
                 <div className={styles.contentDiv}>
                     <div className={styles.textDiv}>
@@ -66,26 +69,26 @@ function Header() {
                         <p className={styles.linksHeading}>Amenities</p>
                         <div className={styles.linksDiv}>
                             <div>
-                                <p><span><img src={mountainview} alt="logo"/>{" "}</span>Mountain view</p>
-                                <p><span><img src={wifi} alt="logo"/>{" "}</span>Free Wi-Fi</p>
-                                <p><span><img src={reception} alt="logo"/>{" "}</span>24/7 Reception</p>
-                                <p><span><img src={games} alt="logo"/>{" "}</span>In-house Activites</p>
-                                <p><span><img src={tea} alt="logo"/>{" "}</span>Breakfast (Extra)</p>
-                                <p><span><img src={bed} alt="logo"/>{" "}</span>Linen Included</p>
+                                <p><span><img src={mountainview} alt="logo" />{" "}</span>Mountain view</p>
+                                <p><span><img src={wifi} alt="logo" />{" "}</span>Free Wi-Fi</p>
+                                <p><span><img src={reception} alt="logo" />{" "}</span>24/7 Reception</p>
+                                <p><span><img src={games} alt="logo" />{" "}</span>In-house Activites</p>
+                                <p><span><img src={tea} alt="logo" />{" "}</span>Breakfast (Extra)</p>
+                                <p><span><img src={bed} alt="logo" />{" "}</span>Linen Included</p>
                             </div>
                             <div>
-                            <p><span><img src={hottub} alt="logo"/>{" "}</span>Hot water</p>
-                                <p><span><img src={television} alt="logo"/>{" "}</span>Common Television</p>
-                                <p><span><img src={frame} alt="logo"/>{" "}</span>Common hangout area</p>
-                                <p><span><img src={lamp} alt="logo"/>{" "}</span>Bedside Lamps</p>
-                                <p><span><img src={bagsuitcase} alt="logo"/>{" "}</span>Storage Facility</p>
+                                <p><span><img src={hottub} alt="logo" />{" "}</span>Hot water</p>
+                                <p><span><img src={television} alt="logo" />{" "}</span>Common Television</p>
+                                <p><span><img src={frame} alt="logo" />{" "}</span>Common hangout area</p>
+                                <p><span><img src={lamp} alt="logo" />{" "}</span>Bedside Lamps</p>
+                                <p><span><img src={bagsuitcase} alt="logo" />{" "}</span>Storage Facility</p>
                             </div>
                             <div>
-                            <p><span><img src={laundry} alt="logo"/>{" "}</span>Laundry Services (Extra)</p>
-                                <p><span><img src={water} alt="logo"/>{" "}</span>Water Dispenser</p>
-                                <p><span><img src={cafe} alt="logo"/>{" "}</span>Cafe</p>
-                                <p><span><img src={bathtub} alt="logo"/>{" "}</span>Shower</p>
-                                <p><span><img src={Towels} alt="logo"/>{" "}</span>Towels on rent</p>
+                                <p><span><img src={laundry} alt="logo" />{" "}</span>Laundry Services (Extra)</p>
+                                <p><span><img src={water} alt="logo" />{" "}</span>Water Dispenser</p>
+                                <p><span><img src={cafe} alt="logo" />{" "}</span>Cafe</p>
+                                <p><span><img src={bathtub} alt="logo" />{" "}</span>Shower</p>
+                                <p><span><img src={Towels} alt="logo" />{" "}</span>Towels on rent</p>
                             </div>
                         </div>
                     </div>

@@ -16,10 +16,10 @@ const Layout = () => {
         <>
             <div style={{ background: "#e5e5e5" }}>
 
-                <Navbar />
+                {/* <Navbar /> */}
                 <br></br>
                 <CoverPage />
-                <Search />
+                < Search />
                 <Destination />
                 <WhatsNew />
                 <ZostelHomes />
@@ -30,6 +30,8 @@ const Layout = () => {
                 <Awards />
                 <Footer />
             </div>
+
+
         </>
     )
 }
