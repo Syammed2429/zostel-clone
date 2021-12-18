@@ -2,13 +2,18 @@ import React from 'react'
 import styles from './CheckOut.module.css'
 import { BiCart } from "react-icons/bi";
 import { MdPayment } from "react-icons/md";
+import { Link, useHistory } from 'react-router-dom'
+
+
+
 export function Pay() {
+    const history = useHistory()
+
+
+
     return (
         <div className={styles.mainConainer}>
             <div className={styles.logoBar}>
-                <div className={styles.logoLeft}>
-                    <img src="https://s3.ap-south-1.amazonaws.com/zo-static/website/img/zostel-logo.png" alt="Zostel" className={styles.image} />
-                </div>
                 <div className={styles.logoRight}>
                     <img src="https://api.juspay.in/images/juspay/jp-logo-v3.1.1.png" alt="JUSPAY" className={styles.image} />
                 </div>
@@ -18,7 +23,7 @@ export function Pay() {
                 <div className={styles.paymentContents}>
                     <div className={styles.orderInfo}>
                         <h5 className={styles.orderInfoHeading}>
-                            <span className={styles.iconImage} ><BiCart/></span>
+                            <span className={styles.iconImage} ><BiCart /></span>
                             Your transaction details
                         </h5>
 
@@ -37,7 +42,7 @@ export function Pay() {
                             </div>
                         </div>
                         <h5 className={styles.paymentoptionHeading}>
-                            <p className={styles.iconImage} ><MdPayment/></p>
+                            <p className={styles.iconImage} ><MdPayment /></p>
                             <p>Payment Options</p>
                             <p className={styles.term}>Secured by JusPay <span>&trade;</span>. Learn more</p>
                         </h5>
@@ -63,23 +68,35 @@ export function Pay() {
                             <div className={styles.cardNumber}>
                                 <p>Expiry (mm/yy)</p>
                                 <div className={styles.expiry}>
-                                    <input  type="text" placeholder='MM' />
+                                    <input type="text" placeholder='MM' />
                                     <p>/</p>
                                     <input type="text" placeholder='YY' />
                                     <p className={styles.cvv}>CVV</p>
-                                    <input  type="text" placeholder='CVV' />
+                                    <input type="password" placeholder='CVV' />
                                     <img className={styles.question} src="https://www.pngfind.com/pngs/m/32-329710_question-mark-png-riddler-logo-transparent-png.png" alt="" />
                                 </div>
                             </div>
 
                             <div className={styles.saveinfo}>
-                               <p className={styles.saveContent}> <input type="checkbox" /></p>
+                                <p className={styles.saveContent}> <input type="checkbox" /></p>
                                 <p>(Save card details for future transactions.)</p>
                                 <p> <img className={styles.question} src="https://www.pngfind.com/pngs/m/32-329710_question-mark-png-riddler-logo-transparent-png.png" alt="" /></p>
                             </div>
 
                             <div className={styles.btnDiv}>
-                                <button className={styles.payBtn}>Make Payment ₹ 749.00</button>
+                                {/* <Link to="/success"> */}
+
+                                <button
+                                    onClick={() => {
+                                        console.log("Clicked");
+                                        setTimeout(() => {
+                                            return window.location = "http://localhost:3001/success"
+                                        }, 3000)
+                                    }}
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop"
+                                    className={styles.payBtn}>Make Payment ₹ 749.00</button>
+                                {/* </Link> */}
                             </div>
                             <div className={styles.cardLogoDiv}>
                                 <img src="https://allvectorlogo.com/img/2016/03/verified-by-visa-logo.png" alt="" />
@@ -91,6 +108,63 @@ export function Pay() {
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+            {/* <!-- Modal --> */}
+            <div
+                class="modal fade"
+                style={{
+                    marginTop: "20%"
+                }}
+                id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Payment Processing</h5>
+                        </div>
+                        <div class="modal-body">
+                            Please wait till the payment succeed, don't close or refresh the window
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div className="modal fade-5 " backdrop="true" id="staticBackdrop" style={{
+                marginTop: "20%"
+            }} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog mt-5" >
+                    <div class="modal-content ">
+                        <div className="modal-header text-center">
+                            <h5 className="modal-title col-11" id="staticBackdropLabel"></h5>
+                            {/* <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> */}
+                        </div>
+                        <div class="modal-body">
+
+                        </div>
+                        {/* <div class="modal-footer"> */}
+                        {/* <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> */}
+                        {/* <button type="button" class="btn btn-primary">Save changes</button> */}
+                        {/* </div> */}
+                    </div>
+                </div>
+            </div>
+
+            {/* Modal ENd */}
         </div>
     )
 }

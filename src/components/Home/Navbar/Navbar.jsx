@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from '../../../assets/images/zostel-logo.svg'
 import './navbar.css'
+import { Link } from 'react-router-dom'
+
 
 const styles = {
     show: {
@@ -27,9 +29,11 @@ const Navbar = () => {
     return (
         <>
             <div>
-                <div>
-                    <img className="logo" src={logo} alt="logo" />
-                </div>
+                <Link to="/">
+                    <div>
+                        <img className="logo" src={logo} alt="logo" />
+                    </div>
+                </Link>
                 <div className="header">
                     <ul className="d-flex justify-content-end  mx-5 gap-5 my-3 list text-uppercase">
                         <div className="d-flex">

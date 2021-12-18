@@ -3,40 +3,41 @@ import { Card } from '../card/Card';
 import styles from './booking.module.css'
 import rightaeroblack from '../../../assets/images/rightaeroblack.svg'
 import man from '../../../assets/images/man.svg'
-import {Contact} from '../about/Contact';
-import {SummaryContext} from '../../context/SummaryContext'
+import { Contact } from '../about/Contact';
+import { SummaryContext } from '../../context/SummaryContext'
 import deleteLogo from '../../../assets/images/deleteLogo.svg'
 import Header from '../header/Header';
 import dateFormat from "dateformat";
+import { Link } from 'react-router-dom'
 
 function Booking() {
     const { summary, setSumary } = useContext(SummaryContext)
     console.log(summary);
 
-    const handleDelete=()=>{
+    const handleDelete = () => {
         setSumary({})
     }
-   useEffect(()=>{
-    let units=document.querySelector(".unitsAvilable")
-    let nounits=document.querySelector(".noUnits")
-    if(summary.name===undefined)
-    {
-        nounits.style.display="block"
-        units.style.display="none"
-    }
-    else{
-        nounits.style.display="none"
-        units.style.display="block"
-    }
-   },[summary,setSumary])
+    useEffect(() => {
+        let units = document.querySelector(".unitsAvilable")
+        let nounits = document.querySelector(".noUnits")
+        if (summary.name === undefined) {
+            nounits.style.display = "block"
+            units.style.display = "none"
+        }
+        else {
+            nounits.style.display = "none"
+            units.style.display = "block"
+        }
+    }, [summary, setSumary])
 
-   const weekday = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"];
-   var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-   var date2 = new Date();
-   date2.setDate(date2.getDate() + 1);
+    const weekday = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"];
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+    var date2 = new Date();
+    date2.setDate(date2.getDate() + 1);
     return (
-        <div style={{backgroundColor:"#e2e8f0",textAlign:"center"}}>
-          <Header/>
+        <div style={{ backgroundColor: "#e2e8f0", textAlign: "center" }}>
+
+            <Header />
             <div className={styles.headingDiv}>
                 <div>
                     <p className={styles.heading}>Book Your Stay</p>
@@ -65,7 +66,7 @@ function Booking() {
                     </div>
 
 
-                    <div className='unitsAvilable' style={{marginLeft:"-70px",marginTop:"20px"}}>
+                    <div className='unitsAvilable' style={{ marginLeft: "-70px", marginTop: "20px" }}>
                         <div className={styles.summaryhead}>
                             <p className={styles.summarytitle}>{summary.name} <span style={{ fontWeight: "400", fontSize: "14px" }}> x 1</span></p>
                             <img onClick={handleDelete} className={styles.deleteLogo} src={deleteLogo} alt="Delete" />
@@ -87,9 +88,11 @@ function Booking() {
                             <p>₹ {summary.price}</p>
                         </div>
 
-                        <div className={styles.bookNowbtn}>
-                            <p className={styles.bookNowtxt}>BOOK NOW</p>
-                        </div>
+                        <Link to="/booking-info">
+                            <div className={styles.bookNowbtn}>
+                                <p className={styles.bookNowtxt}>BOOK NOW</p>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

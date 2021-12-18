@@ -5,7 +5,7 @@ const Button = ({ size, text }) => {
         <div className="button-style">
             <button
                 style={{ background: "#F1563F" }}
-                className={`btn text-uppercase text-white ${size}`}
+                className={`btn text-uppercase text-white  ${size}`}
             >{text}</button>
         </div>
     )
