@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import './slidebar.css'
+import './Slidebar.css'
 
 //Images
 import alleppey from '../../../assets/images/Alleppey.svg'
