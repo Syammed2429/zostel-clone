@@ -1,33 +1,48 @@
 import axios from "axios";
 import { useState, useEffect } from "react"
-// import { render } from "react-dom";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./ImageGallery.css"
 
 export const ImagesGallery = () => {
 
-    const [images, setImages] = useState(null);
+    const images = [
+        {
+          original: 'https://picsum.photos/id/1018/1000/600/',
+          thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        },
+        {
+          original: 'https://picsum.photos/id/1015/1000/600/',
+          thumbnail: 'https://picsum.photos/id/1015/250/150/',
+        },
+        {
+          original: 'https://picsum.photos/id/1019/1000/600/',
+          thumbnail: 'https://picsum.photos/id/1019/250/150/',
+        },
+      ];
+      
 
-    useEffect(() => {
-        let shouldCancel = false;
-        const call = async () => {
-            const response = await axios.get("https://google-photos-album-demo2.glitch.me/4eXXxxG3rYwQVf948");
+    // const [images, setImages] = useState(null);
 
-            if (!shouldCancel && response.data && response.data.length > 0) {
-                setImages(
-                    response.data.map(url => ({
-                        original: `${url}=w1024`,
-                        thumbnail: `${url}=w100`
-                    }))
-                );
-            }
-        };
+    // useEffect(() => {
+    //     let shouldCancel = false;
+    //     const call = async () => {
+    //         const response = await axios.get("https://www.npmjs.com/package/react-responsive-carousel");
 
-        call();
-        return () => (shouldCancel = true);
+    //         if (!shouldCancel && response.data && response.data.length > 0) {
+    //             setImages(
+    //                 response.data.map(url => ({
+    //                     original: `${url}=w1024`,
+    //                     thumbnail: `${url}=w100`
+    //                 }))
+    //             );
+    //         }
+    //     };
 
-    }, []);
+    //     call();
+    //     return () => (shouldCancel = true);
+
+    // }, []);
 
 
     return (
@@ -35,7 +50,7 @@ export const ImagesGallery = () => {
             <div className="cancel-btn">
                 <img src="x-lg.svg" alt="cancel" />
             </div>
-            {images ? <ImageGallery items={images} /> : null};
+            <ImageGallery items={images} />;
         </>
     )
 
