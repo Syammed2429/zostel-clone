@@ -1,6 +1,8 @@
 import React from 'react'
 import Slider from "react-slick";
-import inr from '../../../assets/images/inr-logo.svg'
+import booking from '../../../assets/images/booking.svg'
+import hotel from '../../../assets/images/hostelworld.svg'
+import stars from '../../../assets/images/stars.svg'
 
 
 
@@ -24,10 +26,16 @@ const GuestReviews = () => {
                 <Slider {...settings}>
                     <div className="card container shadow  w-75 mx-2" style={{ width: "2rem" }}>
                         <div className="card-body">
-                            <div className="d-flex">
+                            <div className="d-flex justify-content-between ">
 
-                                <img src={inr} alt="inr" />
-                                <p>2500 Onwards</p>
+                                <img src={booking} alt="inr" />
+                                <div className="d-flex flex-row-reverse ">
+
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                </div>
                             </div>
                             <h5>Superb hostel! Best in India!</h5>
                             <div className="d-flex card-text justify-content-between text-center">
@@ -44,10 +52,16 @@ const GuestReviews = () => {
 
                     <div className="card container w-75 mx-2 " style={{ width: "2rem" }}>
                         <div className="card-body">
-                            <div className="d-flex">
+                            <div className="d-flex justify-content-between">
 
-                                <img src={inr} alt="inr" />
-                                <p>2500 Onwards</p>
+                                <img src={hotel} alt="inr" />
+                                <div className="d-flex flex-row-reverse ">
+
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                </div>
                             </div>
                             <h5>Superb hostel! Best in India!</h5>
                             <div className="d-flex card-text justify-content-between text-center">
@@ -64,10 +78,17 @@ const GuestReviews = () => {
 
                     <div className="card container w-75 mx-5 " style={{ width: "2rem" }}>
                         <div className="card-body">
-                            <div className="d-flex">
+                            <div className="d-flex justify-content-between">
 
-                                <img src={inr} alt="inr" />
-                                <p>2500 Onwards</p>
+                                <img src={booking} alt="inr" />
+
+                                <div className="d-flex flex-row-reverse ">
+
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                </div>
                             </div>
                             <h5>Superb hostel! Best in India!</h5>
                             <div className="d-flex card-text justify-content-between text-center">
@@ -82,10 +103,17 @@ const GuestReviews = () => {
 
                     <div className="card container w-75">
                         <div className="card-body">
-                            <div className="d-flex">
+                            <div className="d-flex justify-content-between">
 
-                                <img src={inr} alt="inr" />
-                                <p>2500 Onwards</p>
+                                <img src={hotel} alt="inr" />
+
+                                <div className="d-flex flex-row-reverse ">
+
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                </div>
                             </div>
                             <h5>Superb hostel! Best in India!</h5>
                             <div className="d-flex card-text justify-content-between text-center">
@@ -101,10 +129,17 @@ const GuestReviews = () => {
 
                     <div className="card container w-75" style={{ width: "2rem" }}>
                         <div className="card-body">
-                            <div className="d-flex">
+                            <div className="d-flex justify-content-between">
 
-                                <img src={inr} alt="inr" />
-                                <p>2500 Onwards</p>
+                                <img src={booking} alt="inr" />
+
+                                <div className="d-flex flex-row-reverse ">
+
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                </div>
                             </div>
                             <h5>Superb hostel! Best in India!</h5>
                             <div className="d-flex card-text justify-content-between text-center">
@@ -120,10 +155,17 @@ const GuestReviews = () => {
 
                     <div className="card container w-75" style={{ width: "2rem" }}>
                         <div className="card-body">
-                            <div className="d-flex">
+                            <div className="d-flex justify-content-between">
 
-                                <img src={inr} alt="inr" />
-                                <p>2500 Onwards</p>
+                                <img src={hotel} alt="inr" />
+
+                                <div className="d-flex flex-row-reverse ">
+
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                </div>
                             </div>
                             <h5>Superb hostel! Best in India!</h5>
                             <div className="d-flex card-text justify-content-between text-center">
@@ -139,10 +181,17 @@ const GuestReviews = () => {
 
                     <div className="card container w-75" style={{ width: "2rem" }}>
                         <div className="card-body">
-                            <div className="d-flex">
+                            <div className="d-flex justify-content-between">
 
-                                <img src={inr} alt="inr" />
-                                <p>2500 Onwards</p>
+                                <img src={booking} alt="inr" />
+
+                                <div className="d-flex flex-row-reverse ">
+
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                </div>
                             </div>
                             <h5>Superb hostel! Best in India!</h5>
                             <div className="d-flex card-text justify-content-between text-center">
@@ -158,10 +207,17 @@ const GuestReviews = () => {
 
                     <div className="card container w-75" style={{ width: "2rem" }}>
                         <div className="card-body">
-                            <div className="d-flex">
+                            <div className="d-flex justify-content-between">
 
-                                <img src={inr} alt="inr" />
-                                <p>2500 Onwards</p>
+                                <img src={hotel} alt="inr" />
+
+                                <div className="d-flex flex-row-reverse ">
+
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                </div>
                             </div>
                             <h5>Superb hostel! Best in India!</h5>
                             <div className="d-flex card-text justify-content-between text-center">
@@ -177,10 +233,17 @@ const GuestReviews = () => {
 
                     <div className="card container w-75" style={{ width: "2rem" }}>
                         <div className="card-body">
-                            <div className="d-flex">
+                            <div className="d-flex justify-content-between">
 
-                                <img src={inr} alt="inr" />
-                                <p>2500 Onwards</p>
+                                <img src={booking} alt="inr" />
+
+                                <div className="d-flex flex-row-reverse ">
+
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                </div>
                             </div>
                             <h5>Superb hostel! Best in India!</h5>
                             <div className="d-flex card-text justify-content-between text-center">
@@ -196,10 +259,17 @@ const GuestReviews = () => {
 
                     <div className="card container w-75" style={{ width: "2rem" }}>
                         <div className="card-body">
-                            <div className="d-flex">
+                            <div className="d-flex justify-content-between">
 
-                                <img src={inr} alt="inr" />
-                                <p>2500 Onwards</p>
+                                <img src={hotel} alt="inr" />
+
+                                <div className="d-flex flex-row-reverse ">
+
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                </div>
                             </div>
                             <h5>Superb hostel! Best in India!</h5>
                             <div className="d-flex card-text justify-content-between text-center">
@@ -215,10 +285,17 @@ const GuestReviews = () => {
 
                     <div className="card container w-75" style={{ width: "2rem" }}>
                         <div className="card-body">
-                            <div className="d-flex">
+                            <div className="d-flex justify-content-between">
 
-                                <img src={inr} alt="inr" />
-                                <p>2500 Onwards</p>
+                                <img src={booking} alt="inr" />
+
+                                <div className="d-flex flex-row-reverse ">
+
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                </div>
                             </div>
                             <h5>Superb hostel! Best in India!</h5>
                             <div className="d-flex card-text justify-content-between text-center">
@@ -234,10 +311,17 @@ const GuestReviews = () => {
 
                     <div className="card container w-75" style={{ width: "2rem" }}>
                         <div className="card-body">
-                            <div className="d-flex">
+                            <div className="d-flex justify-content-between">
 
-                                <img src={inr} alt="inr" />
-                                <p>2500 Onwards</p>
+                                <img src={hotel} alt="inr" />
+
+                                <div className="d-flex flex-row-reverse ">
+
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                    <img src={stars} alt="stars" />
+                                </div>
                             </div>
                             <h5>Superb hostel! Best in India!</h5>
                             <div className="d-flex card-text justify-content-between text-center">

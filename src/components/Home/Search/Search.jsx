@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../Button/Button'
 import './search.css'
 // import cities from './cities.json'
 
@@ -13,13 +14,13 @@ const visible = {
 }
 
 const Search = () => {
-    const [display, setDisplay] = React.useState(visible.hide || visible.show)
+    const [select, setSelect] = React.useState("Select")
 
     const [cities, setCities] = React.useState("")
 
     return (
         <>
-            <div className="background ">
+            <div className="background">
                 <div className="option1">
                     <p>Zostel</p>
                 </div>
@@ -29,8 +30,8 @@ const Search = () => {
                 </div>
 
 
-                <div className="row container text-center">
-                    <div className="col">
+                <div className="container ">
+                    <div className="d-flex gap-2">
 
                         {/* <div
                             className="row bg-secondary w-25"
@@ -56,9 +57,19 @@ const Search = () => {
                         </div> */}
 
 
+                        {/* <div >{select}</div> */}
+                        {/* <div
+                            onClick={() => {
+                                setSelect()
+                            }}>
+                            <li>wfdwf</li>
+                            <li>87</li>
+                            <li>32r</li>
+                        </div> */}
 
                         <select
-                            className="bg-warning"
+                            style={{ color: "#F1563F" }}
+                            className="bg-warning bg-white py-3 col-4 btn"
                             onChange={(e) => setCities(e.target.value)}
                             value="Select Destionation">
                             {cities}
@@ -116,23 +127,22 @@ const Search = () => {
                             <option value="WAYANAD">WAYANAD</option>
                         </select>
 
+                        {/* <div> */}
 
-                        <input type="date" name="" id="" />
-                        <input type="text" name="" id="" />
-                        <input type="text" name="" id="" />
+                        <input
+                            style={{ background: "#F1563F" }}
+                            className="py-3 btn  col-2" type="date" name="" id="" />
+                        <input
+                            style={{ background: "#F1563F" }}
+                            className="py-1 py-3 btn col-2" type="date" name="" id="" />
+                        <button
+                            style={{ background: "#F1563F" }}
+                            className="col-3 py-3 size btn text-uppercase text-white">Book Now</button>
+                        {/* </div> */}
                     </div>
                 </div>
 
-                <div className="dropdown">
-                    <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </button>
-                    <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><button className="dropdown-item" type="button">Action</button></li>
-                        <li><button className="dropdown-item" type="button">Another action</button></li>
-                        <li><button className="dropdown-item" type="button">Something else here</button></li>
-                    </ul>
-                </div>
+
 
             </div >
         </>

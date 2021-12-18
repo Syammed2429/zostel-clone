@@ -1,99 +1,44 @@
 import React from 'react'
-import Slider from "react-slick";
-import sissu from '../../../assets/images/sissu.svg'
-import sissu2 from '../../../assets/images/sissu2.svg'
-import music from '../../../assets/images/musicathon.svg'
+import wn1 from '../../../assets/images/wn1.svg'
+import wni from '../../../assets/images/wni.svg'
+import wn2I from '../../../assets/images/wn2I.svg'
+import wn2 from '../../../assets/images/wn2.svg'
+import wn3I from '../../../assets/images/wn3I.svg'
+import wn3 from '../../../assets/images/wn3.svg'
 
 
 
-const settings = {
-    // centerMode: true,
-    infinite: false,
-    centerPadding: "60px",
-    slidesToShow: 2,
-    speed: 500,
-    rows: 2,
-    slidesPerRow: 2
-};
 
 
 const WhatsNew = () => {
     return (
         <>
-            <div className="container-fluid w-100">
+            <div className="container-fluid  col-11 my-5 ">
                 <h2>What's New</h2>
-                <Slider {...settings}>
-                    <div className="w-100  ">
 
+                <div className="container-fluid d-flex">
 
-
-
-
-                        <div class="card mb-3 "  >
-                            <div class="row g-0 ">
-                                <div class="col-md-6">
-                                    <img src={sissu} class="img-fluid rounded-start" style={{ height: "px" }} alt="..." />
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="card mb-3" >
-                            <div class="row g-0">
-                                <div class="col-md-">
-                                    <img src={music} class="img-fluid rounded-start" alt="..." />
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="card mb-3" >
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src={sissu2} class="img-fluid rounded-start" alt="..." />
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-
-
-
+                    <div className="d-flex w-50 ">
+                        <img className="" src={wni} alt="featured1" />
+                        <img className="" src={wn1} alt="featured1" />
                     </div>
 
+                    <div className="d-flex w-50">
+                        <img className="" src={wn2I} alt="featured1" />
+                        <img className="" src={wn2} alt="featured1" />
+                    </div>
 
-                </Slider>
+                    <div className="d-flex">
+                        <img className="" src={wn3I} alt="featured1" />
+                        <img className="" src={wn3} alt="featured1" />
+                    </div>
 
-
-
-
+                </div>
             </div>
+
+
+
+
 
         </>
     )

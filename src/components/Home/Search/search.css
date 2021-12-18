@@ -1,9 +1,11 @@
 .background {
   position: absolute;
-  height: 117px;
+  height: 133px;
+  width: 65%;
+  margin: auto;
   left: 224px;
   right: 224px;
-  top: 461px;
+  top: 65%;
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
   text-transform: uppercase;
@@ -16,7 +18,7 @@
   align-items: center;
   padding: px 120px;
   position: absolute;
-  width: 50%;
+  width: 45%;
   height: 48px;
   left: 8px;
   right: 500px;
@@ -30,4 +32,8 @@
   padding: 14px 120px;
   align-items: center;
   margin: 0 10%;
+}
+
+.size {
+  width: 31%;
 }

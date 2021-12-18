@@ -16,7 +16,7 @@ const Destination = () => {
 
 
 
-                <div>
+                <div >
                     <Slidebar />
                 </div>
             </div>

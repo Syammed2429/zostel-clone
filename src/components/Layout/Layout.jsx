@@ -1,6 +1,8 @@
 import React from 'react'
+import { Awards } from '../Home/Awards/Awards'
 import { CoverPage } from '../Home/CoverPage/CoverPage'
 import { Destination } from '../Home/Destination/Destination'
+import { FeaturedHostels } from '../Home/FeaturedHostels/FeaturedHostels'
 import { Footer } from '../Home/Footer/Footer'
 import { GuestReviews } from '../Home/GuestReviews/GuestReviews'
 import { Navbar } from '../Home/Navbar/Navbar'
@@ -17,12 +19,15 @@ const Layout = () => {
                 <Navbar />
                 <br></br>
                 <CoverPage />
-                <Search />
+                < Search />
                 <Destination />
+                <WhatsNew />
                 <ZostelHomes />
                 <ZostelEscape />
+                <FeaturedHostels />
                 <GuestReviews />
-                {/* <WhatsNew /> */}
+                <WhatsNew />
+                <Awards />
                 <Footer />
             </div>
 

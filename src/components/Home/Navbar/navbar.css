@@ -6,6 +6,9 @@
   top: 0px;
   background: #ffff;
 }
+.header li {
+  cursor: pointer;
+}
 
 .logo {
   display: flex;
@@ -27,4 +30,46 @@
   font-style: normal;
   font-weight: normal;
   color: #252525;
+}
+
+/* //dropdown */
+.dropDown {
+  position: absolute;
+  left: 40%;
+  top: 80%;
+  z-index: 1;
+}
+
+.dropDown li:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+.menu-options:hover {
+  background: black;
+  color: grey;
+  padding: 5px 2px;
+}
+
+.menu-options:active {
+  background: black;
+  color: grey;
+  padding: 5px 2px;
+}
+
+.option:active::before {
+  content: "";
+
+  background: black;
+}
+.option::after {
+  pointer-events: none;
+  background: black;
+}
+
+.zostal-homes {
+  left: 46%;
+}
+.join-us {
+  left: 80.3%;
 }
