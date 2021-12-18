@@ -25,6 +25,8 @@ const Layout = () => {
                 {/* <WhatsNew /> */}
                 <Footer />
             </div>
+
+            
         </>
     )
 }

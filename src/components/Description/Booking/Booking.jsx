@@ -11,6 +11,8 @@ import dateFormat from "dateformat";
 
 function Booking() {
     const { summary, setSumary } = useContext(SummaryContext)
+    console.log(summary);
+
     const handleDelete=()=>{
         setSumary({})
     }
