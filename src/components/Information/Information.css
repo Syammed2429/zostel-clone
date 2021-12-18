@@ -76,8 +76,8 @@ section.info-top-cont .left .login .login-btn h5{
 section.info-top-cont .right{
     /* border: 1px solid green; */
     background: #FAFEFF;
-    width: 412px;
-    height: 474px;
+    width: 440px;
+    height: 540px;
     font-family: Segoe UI;
     font-style: normal;
     font-weight: bold;
@@ -109,13 +109,22 @@ section.info-top-cont .right .detail .detail-1 img{
     width: 71px;
     height: 54px;
     border-radius: 6px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
-section.info-top-cont .right .detail .detail-2 p span{
+section.info-top-cont .right .detail .detail-2 p{
+    margin-bottom: 0.2rem;
+}
+section.info-top-cont .right .detail .detail-2 .detail-name{
+    width: 300px;
+}
+section.info-top-cont .right .detail .detail-3 p span{
     font-weight: 400;
 }
-section.info-top-cont .right .detail .detail-3 p{
-    margin-left: 80px;
+section.info-top-cont .right .detail .detail-3 {
+    width: 350px;
+    display: flex;
+    gap: 52%;
+    
 }
 section.info-top-cont .right .tax{
     display: flex;
@@ -127,8 +136,6 @@ section.info-top-cont .right .tax h5{
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
-    /* margin-bottom: 0; */
-    /* margin-bottom: 12px; */
     
 }
 section.info-top-cont .right .tax p{
@@ -157,7 +164,7 @@ section.info-top-cont .right .pay{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 12px 0 44px 0;
+    margin: 12px 0 35px 0;
 }
 section.info-top-cont .right .pay h5{
     font-weight: 600;
@@ -221,15 +228,10 @@ section.info-top-cont .left .guest-info .form-input{
     align-items: center;
     margin-bottom: 1.5rem;
 }
-section.info-top-cont .left .guest-info .form-input #inp:focus{
-    border: 1px solid blue;
-    /* border-color: blue; */
-    /* background-color: #F1563F; */
-}
 
 section.info-top-cont .left .guest-info .form-input input, textarea{
-    padding: 5px;
-    height: 30px;
+    padding: 8px;
+    height: 45px;
     border-radius: 6px;
     width: 100%;
     border: 1px solid #C7C7C7;
@@ -240,12 +242,9 @@ section.info-top-cont .left .guest-info .form-input input, textarea{
 section.info-top-cont .left .guest-info .form-input textarea{
     height: 100px;
 }
-/* section.info-top-cont .left .guest-info .form-input textarea:focus{
-    border-color: blue;
-} */
 section.info-top-cont .left .guest-info .form-input select{
     padding: 5px;
-    height: 42px;
+    height: 45px;
     border-radius: 6px;
     width: 100%;
     border: 1px solid #C7C7C7;
