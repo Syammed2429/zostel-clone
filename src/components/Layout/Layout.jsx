@@ -30,6 +30,8 @@ const Layout = () => {
                 <Awards />
                 <Footer />
             </div>
+
+            
         </>
     )
 }
