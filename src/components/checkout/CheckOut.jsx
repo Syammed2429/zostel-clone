@@ -86,7 +86,6 @@ export function Pay() {
 
                                 <button
                                     onClick={() => {
-                                        console.log("Clicked");
                                         setTimeout(() => {
                                             return window.location = "http://localhost:3000/success"
                                         }, 3000)

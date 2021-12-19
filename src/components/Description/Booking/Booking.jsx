@@ -12,7 +12,6 @@ import { Link } from 'react-router-dom'
 
 function Booking() {
     const { summary, setSumary } = useContext(SummaryContext)
-    console.log(summary);
 
     const handleDelete = () => {
         setSumary({})
@@ -88,7 +87,7 @@ function Booking() {
                             <p>₹ {summary.price}</p>
                         </div>
 
-                        <Link to="/booking-info" style={{textDecoration:"none"}} >
+                        <Link to="/booking-info" style={{ textDecoration: "none" }} >
                             <div className={styles.bookNowbtn}>
                                 <p className={styles.bookNowtxt}>BOOK NOW</p>
                             </div>
