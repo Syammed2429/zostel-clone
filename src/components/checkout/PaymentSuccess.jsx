@@ -9,7 +9,7 @@ const PaymentSuccess = () => {
     React.useEffect(() => {
         setTimeout(() => {
             return history.push("/")
-        }, 7000)
+        }, 8000)
     }, [history]);
 
     return (
