@@ -40,7 +40,7 @@ const Slidebar = () => {
     return (
         <div>
 
-            <div >
+            <div className="text-uppercase">
                 <Slider {...settings}>
                     <div>
                         <img

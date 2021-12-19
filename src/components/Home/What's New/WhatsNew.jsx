@@ -14,21 +14,21 @@ const WhatsNew = () => {
     return (
         <>
             <div className="container-fluid  col-11 my-5 ">
-                <h2>What's New</h2>
+                <h2 className="text-uppercase">What's New</h2>
 
                 <div className="container-fluid d-flex w-100" >
 
-                    <div className="d-flex" style={{width: "33%"}}>
+                    <div className="d-flex" style={{ width: "33%" }}>
                         <img className="w-50" src={wni} alt="featured1" />
                         <img className="w-50" src={wn1} alt="featured1" />
                     </div>
 
-                    <div className="d-flex" style={{width: "33%", marginLeft: "2%"}}>
+                    <div className="d-flex" style={{ width: "33%", marginLeft: "2%" }}>
                         <img className="w-50" src={wn2I} alt="featured1" />
                         <img className="w-50" src={wn2} alt="featured1" />
                     </div>
 
-                    <div className="d-flex" style={{width: "33%", marginLeft: "2%"}}>
+                    <div className="d-flex" style={{ width: "33%", marginLeft: "2%" }}>
                         <img className="w-50" src={wn3I} alt="featured1" />
                         <img className="w-50" src={wn3} alt="featured1" />
                     </div>

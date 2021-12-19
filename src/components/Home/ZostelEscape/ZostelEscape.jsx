@@ -38,7 +38,7 @@ const ZostelEscape = () => {
         <>
 
             <div className="container-fluid col-11 my-5">
-                <h2>Zostel Escape</h2>
+                <h2 className="text-uppercase">Zostel Escape</h2>
                 <Slider {...settings}>
 
                     <div className="card "  >
@@ -51,22 +51,22 @@ const ZostelEscape = () => {
                                 <div>
                                     <div className="d-flex">
 
-                                        <img src={inr} style={{marginBottom:"15px" , marginRight:"5px"}} alt="inr" />
+                                        <img src={inr} style={{ marginBottom: "15px", marginRight: "5px" }} alt="inr" />
                                         <p>14799 Onwards</p>
                                     </div>
 
                                     <div className="d-flex">
-                                        <img src={clock} style={{marginBottom:"15px" , marginRight:"5px"}} alt="inr" />
+                                        <img src={clock} style={{ marginBottom: "15px", marginRight: "5px" }} alt="inr" />
                                         <p>10 Days</p>
                                     </div>
                                 </div>
                                 <div>
                                     <div className="d-flex">
-                                        <img src={star} style={{marginBottom:"15px" , marginRight:"5px"}} alt="ratings" />
+                                        <img src={star} style={{ marginBottom: "15px", marginRight: "5px" }} alt="ratings" />
                                         <p>5 Ratings</p>
                                     </div>
                                     <div className="d-flex">
-                                        <img src={comments} style={{marginBottom:"15px" , marginRight:"5px"}} alt="reviews" />
+                                        <img src={comments} style={{ marginBottom: "15px", marginRight: "5px" }} alt="reviews" />
                                         <p>10 Reviews</p>
                                     </div>
                                 </div>
@@ -85,22 +85,22 @@ const ZostelEscape = () => {
                                 <div>
                                     <div className="d-flex">
 
-                                        <img src={inr} style={{marginBottom:"15px" , marginRight:"5px"}} alt="inr" />
+                                        <img src={inr} style={{ marginBottom: "15px", marginRight: "5px" }} alt="inr" />
                                         <p>2500 Onwards</p>
                                     </div>
 
                                     <div className="d-flex">
-                                        <img src={clock} style={{marginBottom:"15px" , marginRight:"5px"}} alt="inr" />
+                                        <img src={clock} style={{ marginBottom: "15px", marginRight: "5px" }} alt="inr" />
                                         <p>1 Days</p>
                                     </div>
                                 </div>
                                 <div>
                                     <div className="d-flex">
-                                        <img src={star} style={{marginBottom:"15px" , marginRight:"5px"}} alt="ratings" />
+                                        <img src={star} style={{ marginBottom: "15px", marginRight: "5px" }} alt="ratings" />
                                         <p>5.0 Rating</p>
                                     </div>
                                     <div className="d-flex">
-                                        <img src={comments} style={{marginBottom:"15px" , marginRight:"5px"}} alt="reviews" />
+                                        <img src={comments} style={{ marginBottom: "15px", marginRight: "5px" }} alt="reviews" />
                                         <p>12 Reviews</p>
                                     </div>
                                 </div>
@@ -121,22 +121,22 @@ const ZostelEscape = () => {
                                 <div>
                                     <div className="d-flex">
 
-                                        <img src={inr} style={{marginBottom:"15px" , marginRight:"5px"}} alt="inr" />
+                                        <img src={inr} style={{ marginBottom: "15px", marginRight: "5px" }} alt="inr" />
                                         <p>38499 Onwards</p>
                                     </div>
 
                                     <div className="d-flex">
-                                        <img src={clock} style={{marginBottom:"15px" , marginRight:"5px"}} alt="inr" />
+                                        <img src={clock} style={{ marginBottom: "15px", marginRight: "5px" }} alt="inr" />
                                         <p>12 Days</p>
                                     </div>
                                 </div>
                                 <div>
                                     <div className="d-flex">
-                                        <img src={star} style={{marginBottom:"15px" , marginRight:"5px"}} alt="ratings" />
+                                        <img src={star} style={{ marginBottom: "15px", marginRight: "5px" }} alt="ratings" />
                                         <p>5.0 Rating</p>
                                     </div>
                                     <div className="d-flex">
-                                        <img src={comments} style={{marginBottom:"15px" , marginRight:"5px"}} alt="reviews" />
+                                        <img src={comments} style={{ marginBottom: "15px", marginRight: "5px" }} alt="reviews" />
                                         <p>10 Reviews</p>
                                     </div>
                                 </div>

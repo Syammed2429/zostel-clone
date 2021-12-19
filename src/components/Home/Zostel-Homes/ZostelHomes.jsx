@@ -29,7 +29,7 @@ const ZostelHomes = () => {
     return (
         <>
             <div className="container-fluid col-11 my-5">
-                <h2>Zostel Homes</h2>
+                <h2 className="text-uppercase">Zostel Homes</h2>
                 <Slider {...settings}>
 
                     <div className="card " >
@@ -57,7 +57,7 @@ const ZostelHomes = () => {
                         <img src={pushkar} className=" w-100" alt="pushkar" />
                         <div className="card-body">
                             <h3>PUSHKAR, RAJASTHAN</h3>
-                            <p className="card-text">A view of the serene Aravalli Hills, a pool to chill in, and tantalizing Rajasthani food all commingle to make Zostel Homes Pushkar the flavourful delight it is. With tents for private rooms, utterly rural milieus made up of fields and faraway hills, and a rustic vibe, the luxury retreat lies at the outskirts of Pushkar city, away from the bustle and still..........</p>
+                            <p className="card-text">A traditional cottage nestled in a hilly forest area, Zostel Home Wayanad is your quaint hideaway in Kerala’s wilderness. It features a common room with indoor games, a bonfire area, a restaurant, and a garden for a social holiday. Outside, activities like wildlife safaris, treks, and visits to sightseeing spots will keep you engaged. While at the Home, you can look........</p>
                             <Button text="Explore" size="col-12" />
 
                         </div>
