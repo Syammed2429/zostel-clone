@@ -29,30 +29,14 @@ export const InformationPage = () => {
         })
 
     }
-
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        fetch("http://localhost:3001/guests", {
-            method: 'POST',
-            body: JSON.stringify({
-                ...formdata
-            }),
-            headers: {
-                "Content-Type": "application/json"
-            },
-        })
-
         if (formdata.address.length <= 10 && formdata.agree === true && formdata.email.length <= 5 && formdata.firstname.length <= 5 && formdata.lastname.length <= 5) {
             return
         } else {
             history.push("/loading")
         }
-
-
-
     }
-
     var elems = document.querySelectorAll('.check-box');
     var btn = document.querySelector('#reserve-button');
     [].forEach.call(elems, function (el) {

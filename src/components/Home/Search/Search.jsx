@@ -136,12 +136,11 @@ const Search = () => {
                             style={{ background: "#F1563F" }}
                             className=" py-2 btn col-2" type="date" name="" id="" />
                         <div></div>
-                        <Link to="/booking">
+                        <Link to="/booking"   className=" size btn ">
                             <button
                                 style={{ background: "#F1563F" }}
-                                className="col-5 py-2 size btn text-uppercase text-white">Book Now</button>
+                                className="py-2 size btn text-uppercase text-white" >Book Now</button>
                         </Link>
-                        {/* </div> */}
                     </div>
                 </div>
 

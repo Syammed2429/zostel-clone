@@ -16,14 +16,14 @@ const WhatsNew = () => {
             <div className="container-fluid  col-11 my-5 ">
                 <h2>What's New</h2>
 
-                <div className="container-fluid d-flex">
+                <div className="container-fluid d-flex w-100" >
 
-                    <div className="d-flex w-50 ">
+                    <div className="d-flex ">
                         <img className="" src={wni} alt="featured1" />
                         <img className="" src={wn1} alt="featured1" />
                     </div>
 
-                    <div className="d-flex w-50">
+                    <div className="d-flex">
                         <img className="" src={wn2I} alt="featured1" />
                         <img className="" src={wn2} alt="featured1" />
                     </div>
@@ -35,11 +35,6 @@ const WhatsNew = () => {
 
                 </div>
             </div>
-
-
-
-
-
         </>
     )
 }
