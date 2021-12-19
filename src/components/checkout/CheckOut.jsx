@@ -87,7 +87,7 @@ export function Pay() {
                                 <button
                                     onClick={() => {
                                         setTimeout(() => {
-                                            return window.location = "http://localhost:3000/success"
+                                            return window.location = "https://zostel-clone-kerrybli.vercel.app/success"
                                         }, 3000)
                                     }}
                                     data-bs-toggle="modal"
