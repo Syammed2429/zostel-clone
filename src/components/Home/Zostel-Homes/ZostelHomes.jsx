@@ -45,8 +45,8 @@ const ZostelHomes = () => {
                     <div className="card ms-2" >
                         <img src={thirunelly} className=" w-100" alt="thirunelly" />
                         <div className="card-body">
-                            <h3>KARAPUZHA, WAYANAD</h3>
-                            <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
+                            <h3>THIRUNELLY, WAYANAD</h3>
+                            <p className="card-text">A traditional cottage nestled in a hilly forest area, Zostel Home Wayanad is your quaint hideaway in Kerala’s wilderness. It features a common room with indoor games, a bonfire area, a restaurant, and a garden for a social holiday. Outside, activities like wildlife safaris, treks, and visits to sightseeing spots will keep you engaged. While at the Home, you can look........</p>
                             <Button text="Explore" size="col-12" />
 
                         </div>
@@ -56,8 +56,8 @@ const ZostelHomes = () => {
                     <div className="card ms-3">
                         <img src={pushkar} className=" w-100" alt="pushkar" />
                         <div className="card-body">
-                            <h3>KARAPUZHA, WAYANAD</h3>
-                            <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
+                            <h3>PUSHKAR, RAJASTHAN</h3>
+                            <p className="card-text">A view of the serene Aravalli Hills, a pool to chill in, and tantalizing Rajasthani food all commingle to make Zostel Homes Pushkar the flavourful delight it is. With tents for private rooms, utterly rural milieus made up of fields and faraway hills, and a rustic vibe, the luxury retreat lies at the outskirts of Pushkar city, away from the bustle and still..........</p>
                             <Button text="Explore" size="col-12" />
 
                         </div>
@@ -68,7 +68,7 @@ const ZostelHomes = () => {
                     <div className="card ms-4">
                         <img src={kotkhai} className=" w-100" alt="kotkhai" />
                         <div className="card-body">
-                            <h3>KARAPUZHA, WAYANAD</h3>
+                            <h3>KOTKHAI, SHIMLA</h3>
                             <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
                             <Button text="Explore" size="col-12" />
 
@@ -79,8 +79,8 @@ const ZostelHomes = () => {
                     <div className="card ms-4">
                         <img src={rashil} className=" w-100" alt="rashil" />
                         <div className="card-body">
-                            <h3>KARAPUZHA, WAYANAD</h3>
-                            <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
+                            <h3>RASHIL, LAHAUL</h3>
+                            <p className="card-text">A traditional cottage nestled in a hilly forest area, Zostel Home Wayanad is your quaint hideaway in Kerala’s wilderness. It features a common room with indoor games, a bonfire area, a restaurant, and a garden for a social holiday. Outside, activities like wildlife safaris, treks, and visits to sightseeing spots will keep you engaged. While at the Home, you can look........</p>
                             <Button text="Explore" size="col-12" />
 
                         </div>
@@ -91,8 +91,8 @@ const ZostelHomes = () => {
                     <div className="card ms-4">
                         <img src={cheog} className=" w-100" alt="cheog" />
                         <div className="card-body">
-                            <h3>KARAPUZHA, WAYANAD</h3>
-                            <p className="card-text">A close-knit holiday immersed in nature awaits you at this petite Zostel Home, located in the lush green milieus of Wayanad’s Karapuzha lake. Blending flavours of both traditional and modern architecture, this homestay offers a laidback experience for travellers and digital nomads. Here, vast balconies invite in serenity, a blooming garden helps......</p>
+                            <h3>CHEOG, SHIMLA</h3>
+                            <p className="card-text">A view of the serene Aravalli Hills, a pool to chill in, and tantalizing Rajasthani food all commingle to make Zostel Homes Pushkar the flavourful delight it is. With tents for private rooms, utterly rural milieus made up of fields and faraway hills, and a rustic vibe, the luxury retreat lies at the outskirts of Pushkar city, away from the bustle and still..........</p>
                             <Button text="Explore" size="col-12" />
 
                         </div>

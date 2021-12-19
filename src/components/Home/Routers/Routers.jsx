@@ -8,6 +8,7 @@ import { InformationPage } from '../../Information/InformationPage'
 import { Layout } from '../../Layout/Layout'
 import { LoadingPage } from '../../Loading/LoadingPage'
 import { PaymentProcess } from '../../Loading/PaymentProcessing'
+import { Login } from '../../Login/Login'
 import { Navbar } from '../Navbar/Navbar'
 import { Error } from './Error'
 
@@ -26,6 +27,7 @@ const Routers = () => {
                 <Route path="/payment" component={Pay} />
                 <Route path="/payment-process" component={PaymentProcess} />
                 <Route path="/success" component={PaymentSuccess} />
+                <Route path="/login" component={Login} />
 
                 <Route path="*"><Error /></Route>
             </Switch>
