@@ -16,7 +16,7 @@ const WhatsNew = () => {
             <div className="container-fluid  col-11 my-5 ">
                 <h2>What's New</h2>
 
-                <div className="container-fluid d-flex">
+                <div className="container-fluid d-flex w-100" >
 
                     <div className="d-flex" style={{width: "33%"}}>
                         <img className="w-50" src={wni} alt="featured1" />
@@ -35,11 +35,6 @@ const WhatsNew = () => {
 
                 </div>
             </div>
-
-
-
-
-
         </>
     )
 }

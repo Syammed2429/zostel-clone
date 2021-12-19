@@ -148,9 +148,9 @@
   height: 32px;
   width: 32px;
   background-color: #f1563f;
-  position: absolute;
-  left: 46%;
+  position: relative;
   margin-top: 45px;
+  z-index: 999;
   text-align: center;
   align-items: center;
 }

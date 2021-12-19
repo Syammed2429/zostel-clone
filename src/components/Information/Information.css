@@ -2,8 +2,11 @@
   margin: 0;
 }
 .info-main-wrapper {
-  margin: 0 calc(93% - 1440px);
-  margin-top: 52px;
+  /* margin: 0 calc(93% - 1440px);
+  margin-top: 52px; */
+  width: 90%;
+  margin-left: 7%;
+  margin-top: 2%;
 }
 .heading {
   display: flex;
@@ -26,7 +29,7 @@ section.info-top-cont .left {
 }
 section.info-top-cont .left .login {
   border-radius: 8px;
-  background: #f1563f;
+  background: #F1563F;
   color: #ffffff;
   font-family: Segoe UI;
   font-style: normal;

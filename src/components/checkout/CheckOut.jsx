@@ -1,15 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './CheckOut.module.css'
 import { BiCart } from "react-icons/bi";
 import { MdPayment } from "react-icons/md";
-import { Link, useHistory } from 'react-router-dom'
-
+import { SummaryContext } from '../context/SummaryContext';
 
 
 export function Pay() {
-    const history = useHistory()
 
-
+    const { summary } = useContext(SummaryContext);
 
     return (
         <div className={styles.mainConainer}>
@@ -38,7 +36,7 @@ export function Pay() {
                             </div>
                             <div className={styles.paymentInfo_c}>
                                 <p>Amount</p>
-                                <p className={styles.amount}>	₹ 749.00</p>
+                                <p className={styles.amount}>₹ {summary.price}.00</p>
                             </div>
                         </div>
                         <h5 className={styles.paymentoptionHeading}>
@@ -90,12 +88,12 @@ export function Pay() {
                                     onClick={() => {
                                         console.log("Clicked");
                                         setTimeout(() => {
-                                            return window.location = "http://localhost:3001/success"
+                                            return window.location = "http://localhost:3000/success"
                                         }, 3000)
                                     }}
                                     data-bs-toggle="modal"
                                     data-bs-target="#staticBackdrop"
-                                    className={styles.payBtn}>Make Payment ₹ 749.00</button>
+                                    className={styles.payBtn}>Make Payment ₹ {summary.price}.00</button>
                                 {/* </Link> */}
                             </div>
                             <div className={styles.cardLogoDiv}>
@@ -108,14 +106,6 @@ export function Pay() {
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-            {/* <!-- Modal --> */}
             <div
                 class="modal fade"
                 style={{
@@ -124,8 +114,10 @@ export function Pay() {
                 id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Payment Processing</h5>
+                        <div class="modal-header mx-auto">
+                            <h5 class="modal-title " id="staticBackdropLabel">
+                                <img src="https://i.gifer.com/embedded/download/33Hh.gif" alt="" />
+                            </h5>
                         </div>
                         <div class="modal-body">
                             Please wait till the payment succeed, don't close or refresh the window
@@ -135,36 +127,6 @@ export function Pay() {
                 </div>
             </div>
 
-
-
-
-
-
-
-
-
-
-            <div className="modal fade-5 " backdrop="true" id="staticBackdrop" style={{
-                marginTop: "20%"
-            }} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog mt-5" >
-                    <div class="modal-content ">
-                        <div className="modal-header text-center">
-                            <h5 className="modal-title col-11" id="staticBackdropLabel"></h5>
-                            {/* <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> */}
-                        </div>
-                        <div class="modal-body">
-
-                        </div>
-                        {/* <div class="modal-footer"> */}
-                        {/* <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> */}
-                        {/* <button type="button" class="btn btn-primary">Save changes</button> */}
-                        {/* </div> */}
-                    </div>
-                </div>
-            </div>
-
-            {/* Modal ENd */}
         </div>
     )
 }
