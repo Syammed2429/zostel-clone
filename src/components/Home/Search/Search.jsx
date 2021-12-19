@@ -16,7 +16,6 @@ const visible = {
 const Search = () => {
     const history = useHistory();
     const [select, setSelect] = React.useState("Select")
-    const history = useHistory();
 
     const [cities, setCities] = React.useState("Select Destination")
 
@@ -138,7 +137,6 @@ const Search = () => {
                         <input
                             style={{ color: "#F1563F" }}
                             // style={{ background: "#F1563F" }}
-                            value={"hello"}
                             className="py-2 btn  btn  col-2  bg-white" type="date" name="" id="" />
                         <input
                             style={{ color: "#F1563F" }}
