@@ -2,8 +2,13 @@
   margin: 0;
 }
 .info-main-wrapper {
+<<<<<<< HEAD
   width: 80%; 
    margin-left: 7%;
+=======
+  margin: 0 calc(93% - 1440px);
+  margin-top: 52px;
+>>>>>>> b99a4ee2e0387512b0e4b50eb99f93eef97ecb66
 }
 .heading {
   display: flex;
@@ -22,12 +27,9 @@ section.info-top-cont {
   grid-gap: 24px;
 }
 section.info-top-cont .left {
-  /* height: 102px; */
   width: 840px;
-  /* align-items: center; */
 }
 section.info-top-cont .left .login {
-  /* margin-top: 0; */
   border-radius: 8px;
   background: #F1563F;
   color: #ffffff;
@@ -73,7 +75,6 @@ section.info-top-cont .left .login .login-btn h5 {
   font-size: 20px;
 }
 section.info-top-cont .right {
-  /* border: 1px solid green; */
   background: #fafeff;
   width: 440px;
   height: 540px;
@@ -92,7 +93,6 @@ section.info-top-cont .right .title p {
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
-  /* margin-top: 0; */
 }
 section.info-top-cont .right .title p span {
   font-weight: 400;
@@ -107,7 +107,6 @@ section.info-top-cont .right .detail .detail-1 img {
   width: 71px;
   height: 54px;
   border-radius: 6px;
-  /* border: 1px solid red; */
 }
 section.info-top-cont .right .detail .detail-2 p {
   margin-bottom: 0.2rem;
@@ -148,7 +147,6 @@ section.info-top-cont .right .total h5 {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  /* margin: 12px 0; */
 }
 section.info-top-cont .right .total p {
   justify-content: flex-end;
@@ -163,9 +161,6 @@ section.info-top-cont .right .pay {
 section.info-top-cont .right .pay h5 {
   font-weight: 600;
   font-size: 20px;
-  /* margin: 12px 0; */
-  /* margin-top: 0; */
-  /* margin-bottom: 44px; */
   line-height: 28px;
 }
 section.info-top-cont .right .pay p {
@@ -228,7 +223,6 @@ textarea {
   border-radius: 6px;
   width: 100%;
   border: 1px solid #c7c7c7;
-  /* margin-bottom: 1.5rem; */
 }
 section.info-top-cont .left .guest-info .form-input textarea {
   height: 100px;
@@ -250,7 +244,6 @@ section.info-top-cont .left .guest-info .form-input label {
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
-  /* display: flex; */
   align-items: center;
   color: #2a2a2a;
   width: 104px;
@@ -264,7 +257,6 @@ section.info-top-cont .left .guest-info .form-input label::after {
 }
 
 section.info-top-cont .left .guest-info .title {
-  /* height: 66px; */
   align-items: center;
   background: #fafeff;
   border: 1px solid #c7c7c7;

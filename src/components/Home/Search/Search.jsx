@@ -1,6 +1,6 @@
 import React from 'react'
 import './search.css'
-import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 // import cities from './cities.json'
 
 
@@ -14,9 +14,14 @@ const visible = {
 }
 
 const Search = () => {
+    const history = useHistory();
     const [select, setSelect] = React.useState("Select")
 
     const [cities, setCities] = React.useState("Select Destination")
+
+    const handleBooking = () => {
+        history.push("/booking");
+    }
 
     return (
         <>
@@ -69,9 +74,9 @@ const Search = () => {
 
                         <select
                             style={{ color: "#F1563F" }}
-                            className="bg-warning bg-white py-3 col-4 btn"
+                            className=" bg-white py-3 col-4 btn"
                             onChange={(e) => setCities(e.target.value)}
-                            value="Select Destionation">
+                            value="Select Destination">
                             {cities}
 
                             {/* 
@@ -130,17 +135,20 @@ const Search = () => {
                         {/* <div> */}
 
                         <input
-                            style={{ background: "#F1563F" }}
-                            className="py-2 btn  col-2" type="date" name="" id="" />
+                            style={{ color: "#F1563F" }}
+                            // style={{ background: "#F1563F" }}
+                            className="py-2 btn  btn  col-2  bg-white" type="date" name="" id="" />
                         <input
-                            style={{ background: "#F1563F" }}
-                            className=" py-2 btn col-2" type="date" name="" id="" />
+                            style={{ color: "#F1563F" }}
+                            className=" py-2 btn col-2 bg-white" type="date" name="" id="" />
                         <div></div>
-                        <Link to="/booking"   className=" size btn ">
-                            <button
-                                style={{ background: "#F1563F" }}
-                                className="py-2 size btn text-uppercase text-white" >Book Now</button>
-                        </Link>
+                        {/* <Link to="/booking"> */}
+                        <button
+                            style={{ background: "#F1563F" }}
+                            onClick={() => {
+                                history.push("/booking")
+                            }}
+                            className="col-5 py-2 size btn text-uppercase text-white">Book Now</button>
                     </div>
                 </div>
 

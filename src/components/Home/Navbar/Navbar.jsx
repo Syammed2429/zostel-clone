@@ -9,8 +9,6 @@ const styles = {
         display: 'flex',
         gap: "10px",
 
-
-
     },
     hidden: {
         display: 'none'
@@ -23,8 +21,6 @@ const Navbar = () => {
     const [hostels, setHostels] = React.useState(styles.hidden)
     const [zostelHomes, setZostelHomes] = React.useState(styles.hidden)
     const [joinUs, setJoinUs] = React.useState(styles.hidden)
-
-
 
     return (
         <>
@@ -45,7 +41,7 @@ const Navbar = () => {
                             <div
 
                                 style={{ ...hostels }}
-                                className="col bg-black text-white  px-4 mx-5 dropDown ">
+                                className="col bg-black text-white  px-4 ms-1 dropDown ">
                                 <div className="">
                                     <li>Alleppey</li>
                                     <li>Aurangabad</li>
@@ -129,9 +125,6 @@ const Navbar = () => {
 
                         </div>
 
-
-
-
                         <li
                             className="menu-options"
                         >Travel for Tomorrow</li>
@@ -159,8 +152,6 @@ const Navbar = () => {
 
                             </div>
                         </div>
-
-
 
                         <li
                             className="menu-options option"

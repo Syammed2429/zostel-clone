@@ -29,28 +29,28 @@ const Awards = () => {
                 <div className="container-fluid ">
                     <Slider {...settings}>
                         <div className="">
-                            <img className="img-fluid" src={a1} alt="featured1" />
+                            <img style={{width: "96%", marginLeft:"3%"}} className="img-fluid" src={a1} alt="featured1" />
 
                         </div >
                         <div className=" ">
-                            <img className="" src={a2} alt="featured1" />
+                            <img style={{width: "96%", marginLeft:"3%"}} className="" src={a2} alt="featured1" />
 
                         </div>
                         <div className="">
-                            <img className="" src={a3} alt="featured1" />
+                            <img style={{width: "96%", marginLeft:"3%"}} className="" src={a3} alt="featured1" />
 
                         </div>
                         <div>
-                            <img className="" src={a4} alt="featured1" />
+                            <img style={{width: "96%", marginLeft:"3%"}} className="" src={a4} alt="featured1" />
 
                         </div>
 
                         <div>
-                            <img className="" src={a5} alt="featured1" />
+                            <img style={{width: "96%", marginLeft:"3%"}} className="" src={a5} alt="featured1" />
 
                         </div>
                         <div>
-                            <img className="" src={a6} alt="featured1" />
+                            <img style={{width: "96%", marginLeft:"3%"}} className="" src={a6} alt="featured1" />
 
                         </div>
 
