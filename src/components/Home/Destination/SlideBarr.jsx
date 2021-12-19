@@ -24,9 +24,7 @@ import chennai from '../../../assets/images/chennai.svg'
 
 
 const settings = {
-    // centerMode: true,
     infinite: false,
-    // centerPadding: "60px",
     slidesToShow: 2,
     speed: 500,
     rows: 2,
@@ -40,7 +38,7 @@ const Slidebar = () => {
     return (
         <div>
 
-            <div >
+            <div className="text-uppercase">
                 <Slider {...settings}>
                     <div>
                         <img
@@ -192,22 +190,6 @@ const Slidebar = () => {
 
                 </Slider>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
     );
 }

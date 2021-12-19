@@ -9,11 +9,8 @@ import stars from '../../../assets/images/stars.svg'
 
 const GuestReviews = () => {
     const settings = {
-        // centerMode: true,
         infinite: false,
-        // centerPadding: "120px",
         slidesToShow: 4,
-        // className: "center",
         speed: 500,
         swipeToSlide: true,
         arrows: true,
