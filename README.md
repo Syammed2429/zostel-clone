@@ -1,3 +1,5 @@
+![ZostelLogo](https://user-images.githubusercontent.com/83694840/146682423-9bed17e3-83f7-412f-b5de-a0fe01f4f9bd.png)
+
 <h1> Zostel Clone </h1>
 <h5>https://zostel-clone-kerrybli.vercel.app/</h5>
 
