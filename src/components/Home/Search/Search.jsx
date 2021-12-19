@@ -19,6 +19,10 @@ const Search = () => {
 
     const [cities, setCities] = React.useState("Select Destination")
 
+    const handleBooking = () => {
+        history.push("/booking");
+    }
+
     return (
         <>
             <div className="background">
@@ -133,7 +137,6 @@ const Search = () => {
                         <input
                             style={{ color: "#F1563F" }}
                             // style={{ background: "#F1563F" }}
-                            value={"hello"}
                             className="py-2 btn  btn  col-2  bg-white" type="date" name="" id="" />
                         <input
                             style={{ color: "#F1563F" }}

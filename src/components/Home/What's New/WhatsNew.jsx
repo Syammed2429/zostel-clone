@@ -18,19 +18,19 @@ const WhatsNew = () => {
 
                 <div className="container-fluid d-flex">
 
-                    <div className="d-flex w-50 ">
-                        <img className="" src={wni} alt="featured1" />
-                        <img className="" src={wn1} alt="featured1" />
+                    <div className="d-flex" style={{width: "33%"}}>
+                        <img className="w-50" src={wni} alt="featured1" />
+                        <img className="w-50" src={wn1} alt="featured1" />
                     </div>
 
-                    <div className="d-flex w-50">
-                        <img className="" src={wn2I} alt="featured1" />
-                        <img className="" src={wn2} alt="featured1" />
+                    <div className="d-flex" style={{width: "33%", marginLeft: "2%"}}>
+                        <img className="w-50" src={wn2I} alt="featured1" />
+                        <img className="w-50" src={wn2} alt="featured1" />
                     </div>
 
-                    <div className="d-flex">
-                        <img className="" src={wn3I} alt="featured1" />
-                        <img className="" src={wn3} alt="featured1" />
+                    <div className="d-flex" style={{width: "33%", marginLeft: "2%"}}>
+                        <img className="w-50" src={wn3I} alt="featured1" />
+                        <img className="w-50" src={wn3} alt="featured1" />
                     </div>
 
                 </div>
