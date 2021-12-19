@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Button } from '../Button/Button'
 import successMsg from './success.svg'
 import { useHistory } from 'react-router-dom'
 

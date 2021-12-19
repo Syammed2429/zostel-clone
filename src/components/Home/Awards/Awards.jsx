@@ -9,8 +9,6 @@ import Slider from "react-slick";
 
 
 
-
-
 const Awards = () => {
     const settings = {
         dots: false,

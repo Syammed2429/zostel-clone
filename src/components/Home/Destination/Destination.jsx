@@ -13,9 +13,6 @@ const Destination = () => {
             <div className="container-fluid col-11 my-5">
                 <h2 className="text-uppercase">Zostel Destination</h2>
 
-
-
-
                 <div >
                     <Slidebar />
                 </div>

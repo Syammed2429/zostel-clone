@@ -28,7 +28,6 @@ const Routers = () => {
                 <Route path="/payment-process" component={PaymentProcess} />
                 <Route path="/success" component={PaymentSuccess} />
                 <Route path="/login" component={Login} />
-
                 <Route path="*"><Error /></Route>
             </Switch>
         </div>
