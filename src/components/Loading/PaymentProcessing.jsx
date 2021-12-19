@@ -33,7 +33,6 @@ const LogoCont = styled.div`
 
 export const PaymentProcess = () => {
     const params = useParams()
-    console.log('params:', params)
     const history = useHistory()
 
 
