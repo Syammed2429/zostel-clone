@@ -16,7 +16,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: px 120px;
+  padding: 0px 50px;
   position: absolute;
   width: 45%;
   height: 48px;
@@ -35,5 +35,5 @@
 }
 
 .size {
-  width: 50%;
+  width: 31%;
 }
