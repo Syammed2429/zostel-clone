@@ -15,9 +15,9 @@ const FeaturedHostels = () => {
                 <h2>FEATURED HOSTELS</h2>
 
                 <div className="container-fluid d-flex">
-                    <img className="me-5" src={featured1} alt="featured1" />
-                    <img className="mx-4 px-2" src={featured2} alt="featured1" />
-                    <img className="mx-4 px-4" src={featured3} alt="featured1" />
+                    <img className="" style={{width: "32%" }}src={featured1} alt="featured1" />
+                    <img className="" style={{width: "32%", marginLeft: "2%"}} src={featured2} alt="featured1" />
+                    <img className="" style={{width: "32%", marginLeft: "2%"}} src={featured3} alt="featured1" />
                 </div>
             </div>
         </>

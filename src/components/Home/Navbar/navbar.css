@@ -46,15 +46,15 @@
 }
 
 .menu-options:hover {
-  background: black;
-  color: grey;
-  padding: 5px 2px;
+  /* background: black; */
+  color: #F1563F;
+  /* padding: 5px 2px; */
 }
 
 .menu-options:active {
   background: black;
   color: grey;
-  padding: 5px 2px;
+  /* padding: 5px 2px; */
 }
 
 .option:active::before {

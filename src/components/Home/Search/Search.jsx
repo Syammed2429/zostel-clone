@@ -1,7 +1,8 @@
 import React from 'react'
 import './search.css'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 // import cities from './cities.json'
+import { useHistory } from 'react-router-dom'
 
 
 const visible = {
@@ -15,8 +16,13 @@ const visible = {
 
 const Search = () => {
     const [select, setSelect] = React.useState("Select")
+    const history = useHistory();
 
     const [cities, setCities] = React.useState("Select Destination")
+
+    const handleBooking = () => {
+        history.push("/booking");
+    }
 
     return (
         <>
@@ -136,11 +142,11 @@ const Search = () => {
                             style={{ background: "#F1563F" }}
                             className=" py-2 btn col-2" type="date" name="" id="" />
                         <div></div>
-                        <Link to="/booking">
-                            <button
+                        {/* <Link to="/booking"> */}
+                            <button onClick={handleBooking}
                                 style={{ background: "#F1563F" }}
-                                className="col-5 py-2 size btn text-uppercase text-white">Book Now</button>
-                        </Link>
+                                className=" py-2 size btn text-uppercase text-white">Book Now</button>
+                        {/* </Link> */}
                         {/* </div> */}
                     </div>
                 </div>
