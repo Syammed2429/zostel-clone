@@ -2,13 +2,11 @@
   margin: 0;
 }
 .info-main-wrapper {
-<<<<<<< HEAD
-  width: 80%; 
-   margin-left: 7%;
-=======
-  margin: 0 calc(93% - 1440px);
-  margin-top: 52px;
->>>>>>> b99a4ee2e0387512b0e4b50eb99f93eef97ecb66
+  /* margin: 0 calc(93% - 1440px);
+  margin-top: 52px; */
+  width: 90%;
+  margin-left: 7%;
+  margin-top: 2%;
 }
 .heading {
   display: flex;
@@ -35,7 +33,7 @@ section.info-top-cont .left .login {
   color: #ffffff;
   font-family: Segoe UI;
   font-style: normal;
-  padding: 14px;
+  padding: 16px;
 }
 section.info-top-cont .left .login h4 {
   font-weight: bold;

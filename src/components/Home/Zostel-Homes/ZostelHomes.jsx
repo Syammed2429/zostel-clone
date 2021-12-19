@@ -32,7 +32,7 @@ const ZostelHomes = () => {
                 <h2>Zostel Homes</h2>
                 <Slider {...settings}>
 
-                    <div className="card" style={{ width: "2rem" }}>
+                    <div className="card " >
                         <img src={karapuzha} className=" w-100" alt="karapuzha" />
                         <div className="card-body">
                             <h3>KARAPUZHA, WAYANAD</h3>
@@ -42,7 +42,7 @@ const ZostelHomes = () => {
                     </div>
 
 
-                    <div className="card" style={{ width: "2rem" }}>
+                    <div className="card ms-2" >
                         <img src={thirunelly} className=" w-100" alt="thirunelly" />
                         <div className="card-body">
                             <h3>KARAPUZHA, WAYANAD</h3>
@@ -53,7 +53,7 @@ const ZostelHomes = () => {
                     </div>
 
 
-                    <div className="card" style={{ width: "2rem" }}>
+                    <div className="card ms-3">
                         <img src={pushkar} className=" w-100" alt="pushkar" />
                         <div className="card-body">
                             <h3>KARAPUZHA, WAYANAD</h3>
@@ -65,7 +65,7 @@ const ZostelHomes = () => {
 
 
 
-                    <div className="card" style={{ width: "2rem" }}>
+                    <div className="card ms-4">
                         <img src={kotkhai} className=" w-100" alt="kotkhai" />
                         <div className="card-body">
                             <h3>KARAPUZHA, WAYANAD</h3>
@@ -76,7 +76,7 @@ const ZostelHomes = () => {
                     </div>
 
 
-                    <div className="card" style={{ width: "2rem" }}>
+                    <div className="card ms-4">
                         <img src={rashil} className=" w-100" alt="rashil" />
                         <div className="card-body">
                             <h3>KARAPUZHA, WAYANAD</h3>
@@ -88,7 +88,7 @@ const ZostelHomes = () => {
 
 
 
-                    <div className="card" style={{ width: "2rem" }}>
+                    <div className="card ms-4">
                         <img src={cheog} className=" w-100" alt="cheog" />
                         <div className="card-body">
                             <h3>KARAPUZHA, WAYANAD</h3>
