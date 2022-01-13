@@ -109,7 +109,7 @@ Aparna Jain <br />
 👤 Akash Chandra    https://chandra-akash.github.io/AkashChandra-Portfolio/ <br />
 👤 Akash Kumar   https://akash06-portfolio.netlify.app/ <br />
 👤 Dada Khalandar   https://dada-khalandar-portfolio.vercel.app/#/ <br />
-👤 Rishabh Anand <br /> 
+👤 Rishabh Anand   https://portfolio-rishabhanand02-gmailcom.vercel.app/ <br /> 
 
 
 ### End Notes: <br />
